@@ -1,0 +1,1325 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="theme-color" content="#1e3a8a">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Rénovation à Tanger">
+    <title>Rénovation à Tanger – Artisans qualifiés & devis gratuit</title>
+    <meta name="description" content="Rénovation à Tanger : cuisines, salles de bains, carrelage, peinture, marbre. Artisans qualifiés à Tanger. Devis gratuit.">
+    <meta name="keywords" content="rénovation Tanger, entreprise rénovation Tanger, cuisine Tanger, salle de bain Tanger, peinture, marbre, devis gratuit rénovation, Tanger">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Rénovation à Tanger – Artisans qualifiés & devis gratuit">
+    <meta property="og:description" content="Cuisines, salles de bains, carrelage, peinture, marbre. Artisans qualifiés à Tanger. Devis gratuit.">
+    <meta property="og:image" content="https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Entreprise-de-Renovation-a-Maroc.webp">
+    <meta property="og:url" content="https://renoexpertsmaroc.com">
+    <meta property="og:locale" content="fr_FR">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Rénovation à Tanger – Artisans qualifiés & devis gratuit">
+    <meta name="twitter:description" content="Cuisines, salles de bains, carrelage, peinture, marbre. Devis gratuit à Tanger.">
+    <link rel="canonical" href="https://renoexpertsmaroc.com">
+    <link rel="apple-touch-icon" href="https://renoexpertsmaroc.com/wp-content/uploads/2025/05/logo-Reno-Experts.png">
+    <link rel="icon" type="image/png" href="https://renoexpertsmaroc.com/wp-content/uploads/2025/05/logo-Reno-Experts.png">
+    <script>
+    (function(){
+        var m = {
+            name: "Rénovation à Tanger",
+            short_name: "Rénovation Tanger",
+            start_url: "./index.html",
+            display: "standalone",
+            background_color: "#f1f5f9",
+            theme_color: "#1e3a8a",
+            orientation: "portrait-primary",
+            icons: [
+                { src: "https://renoexpertsmaroc.com/wp-content/uploads/2025/05/logo-Reno-Experts.png", sizes: "192x192", type: "image/png", purpose: "any maskable" },
+                { src: "https://renoexpertsmaroc.com/wp-content/uploads/2025/05/logo-Reno-Experts.png", sizes: "512x512", type: "image/png", purpose: "any maskable" }
+            ]
+        };
+        var l = document.createElement('link');
+        l.rel = 'manifest';
+        l.href = 'data:application/manifest+json,' + encodeURIComponent(JSON.stringify(m));
+        document.head.appendChild(l);
+    })();
+    </script>
+
+    <style>
+        :root {
+            --primary: #1e3a8a; --secondary: #f97316; --light: #f1f5f9; --dark: #0f172a;
+            --gray: #64748b; --success: #10b981; --danger: #ef4444;
+            --footer-bg: #0a0e1a; --footer-text: #cbd5e1;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background-color: var(--light); color: var(--dark); overscroll-behavior-y: none; line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+
+        /* HEADER & LOGO TEXTO */
+        .header { background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        .header-container { display: flex; justify-content: space-between; align-items: center; height: 80px; gap: 1rem; }
+        .logo-text { font-size: 1.4rem; font-weight: 800; color: var(--primary); text-decoration: none; letter-spacing: -0.5px; }
+        .logo-text span { color: var(--secondary); }
+        
+        .nav-menu { display: flex; align-items: center; gap: 1rem; }
+        .nav-links { display: flex; list-style: none; gap: 0.25rem; align-items: center; }
+        .nav-item { position: relative; }
+        .nav-anchor { text-decoration: none; color: var(--dark); font-weight: 600; transition: color 0.3s; position: relative; padding: 0.75rem 0.9rem; display: flex; align-items: center; gap: 0.4rem; cursor: pointer; white-space: nowrap; }
+        .nav-anchor::after { content: ''; position: absolute; bottom: 0; left: 0.9rem; right: 0.9rem; height: 2px; background: var(--secondary); transform: scaleX(0); transition: transform 0.3s; }
+        .nav-anchor:hover::after, .nav-item:hover > .nav-anchor::after { transform: scaleX(1); }
+        .nav-anchor:hover, .nav-item:hover > .nav-anchor { color: var(--secondary); }
+        .dropdown-arrow { font-size: 0.7rem; transition: transform 0.3s; }
+        .nav-item:hover .dropdown-arrow { transform: rotate(180deg); }
+        .dropdown-menu { position: absolute; top: 100%; left: 0; background: white; min-width: 260px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); border-radius: 8px; padding: 0.5rem 0; opacity: 0; visibility: hidden; transform: translateY(10px); transition: all 0.25s ease; z-index: 1001; max-height: 400px; overflow-y: auto; border: 1px solid #e2e8f0; }
+        .nav-item:hover > .dropdown-menu { opacity: 1; visibility: visible; transform: translateY(0); }
+        .dropdown-menu a { display: block; padding: 0.7rem 1.2rem; color: var(--dark); text-decoration: none; font-size: 0.9rem; transition: all 0.2s; border-left: 3px solid transparent; }
+        .dropdown-menu a:hover { background: #f1f5f9; color: var(--secondary); border-left-color: var(--secondary); padding-left: 1.5rem; }
+
+        .mobile-menu-header, .mobile-menu-actions, .mobile-lang-selector { display: none; }
+        .mobile-menu-body { padding: 0; }
+
+        .lang-selector { position: relative; }
+        .lang-btn { background: var(--light); border: 1px solid #ddd; padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: 600; display: flex; align-items: center; gap: 0.5rem; transition: all 0.2s; }
+        .lang-btn:hover { border-color: var(--primary); }
+        .lang-dropdown { display: none; position: absolute; top: 100%; right: 0; background: white; border: 1px solid #ddd; border-radius: 6px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); min-width: 160px; margin-top: 0.5rem; overflow: hidden; z-index: 1001; }
+        .lang-dropdown.active { display: block; animation: slideDown 0.3s ease; }
+        @keyframes slideDown { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
+        .lang-option { padding: 0.75rem 1rem; cursor: pointer; transition: background 0.2s; display: flex; align-items: center; gap: 0.5rem; }
+        .lang-option:hover { background: var(--light); }
+        .lang-option.active { background: var(--light); font-weight: 600; color: var(--primary); }
+
+        .header-actions { display: flex; gap: 0.75rem; align-items: center; }
+        .btn { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.7rem 1.3rem; border-radius: 8px; text-decoration: none; font-weight: 600; border: none; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s; font-size: 0.9rem; white-space: nowrap; }
+        .btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+        .btn:active { transform: translateY(0); }
+        .btn-whatsapp { background: #25D366; color: white; }
+        .btn-call { background: var(--primary); color: white; }
+        .btn-primary { background: var(--secondary); color: white; }
+        .btn-large { padding: 1rem 2rem; font-size: 1.05rem; margin-top: 1.5rem; width: 100%; justify-content: center; }
+        
+        /* HERO */
+        .hero { 
+            background-image: linear-gradient(rgba(15, 23, 42, 0.35), rgba(15, 23, 42, 0.5)), url('https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Entreprise-de-Renovation-a-Maroc.webp');
+            background-size: cover; background-position: center; background-repeat: no-repeat;
+            color: white; padding: 12rem 1.5rem; text-align: center; min-height: 90vh;
+            display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; 
+        }
+        .hero-content { position: relative; z-index: 1; max-width: 900px; }
+        .hero-content h1 { font-size: clamp(2.25rem, 4.5vw, 3.25rem); margin-bottom: 1.5rem; line-height: 1.15; font-weight: 800; text-shadow: 0 2px 10px rgba(0,0,0,0.6); }
+        .hero-content p { font-size: clamp(1.05rem, 2vw, 1.25rem); margin-bottom: 2.5rem; opacity: 0.98; max-width: 780px; margin-left: auto; margin-right: auto; text-shadow: 0 1px 6px rgba(0,0,0,0.6); }
+        .hero-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+        .hero-buttons .btn { flex: 0 1 auto; min-width: 200px; font-size: 16px; }
+
+        /* SECCION EXPERTS */
+        .experts-section { padding: 5rem 0; background: white; }
+        .experts-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+        .experts-images { position: relative; }
+        .experts-img-main { width: 100%; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); object-fit: cover; aspect-ratio: 4/3; }
+        .experts-img-sub { position: absolute; bottom: -30px; right: -20px; width: 55%; border-radius: 12px; border: 6px solid white; box-shadow: 0 10px 20px rgba(0,0,0,0.15); object-fit: cover; aspect-ratio: 4/3; }
+        .experts-content h2 { font-size: clamp(1.8rem, 3vw, 2.5rem); color: var(--dark); margin-bottom: 1.5rem; line-height: 1.2; }
+        .experts-content p { color: var(--gray); font-size: 1.05rem; margin-bottom: 2rem; line-height: 1.7; }
+        .experts-list { list-style: none; margin-bottom: 2.5rem; }
+        .experts-list li { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; color: var(--dark); font-weight: 500; font-size: 1.05rem; }
+        .experts-list li::before { content: '✅'; font-size: 1.2rem; }
+
+        /* SERVICIOS */
+        .services-section { padding: 4rem 0; scroll-margin-top: 100px; }
+        .section-title { font-size: clamp(1.75rem, 4vw, 2.5rem); color: var(--primary); margin-bottom: 2.5rem; text-align: center; position: relative; padding-bottom: 1rem; }
+        .section-title::after { content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 80px; height: 4px; background: var(--secondary); border-radius: 2px; }
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 2rem; }
+        .service-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: transform 0.3s, box-shadow 0.3s; cursor: pointer; border: 1px solid #e2e8f0; display: flex; flex-direction: column; }
+        .service-card:hover { transform: translateY(-5px); box-shadow: 0 12px 24px rgba(0,0,0,0.1); }
+        .service-card-img-wrapper { position: relative; width: 100%; height: 200px; background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%); background-size: 200% 100%; animation: shimmer 1.5s infinite; }
+        @keyframes shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+        .service-card-img { width: 100%; height: 100%; object-fit: cover; display: block; transition: opacity 0.3s; }
+        .service-card-img.loaded { opacity: 1; }
+        .service-card-content { padding: 1.5rem; flex: 1; display: flex; flex-direction: column; }
+        .service-card h3 { color: var(--primary); margin-bottom: 0.75rem; font-size: 1.25rem; }
+        .service-card p { color: var(--gray); font-size: 0.95rem; line-height: 1.5; margin-bottom: 1rem; flex: 1; }
+        .read-more { color: var(--secondary); font-weight: 600; display: inline-flex; align-items: center; gap: 0.25rem; transition: gap 0.2s; }
+        .service-card:hover .read-more { gap: 0.5rem; }
+
+        .reviews-section { padding: 4rem 0; background: white; margin-top: 4rem; }
+        .reviews-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem; }
+        .review-card { background: var(--light); border-radius: 12px; padding: 1.5rem; border: 1px solid #e2e8f0; transition: transform 0.3s; }
+        .review-card:hover { transform: translateY(-5px); box-shadow: 0 8px 16px rgba(0,0,0,0.05); }
+        .review-stars { color: #fbbf24; font-size: 1.2rem; margin-bottom: 0.75rem; letter-spacing: 2px; }
+        .review-text { color: var(--gray); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem; font-style: italic; }
+        .review-author { font-weight: 700; color: var(--primary); font-size: 0.95rem; }
+        .review-city { color: var(--gray); font-size: 0.85rem; }
+
+        /* CTA SECTION */
+        .cta-section { padding: 5rem 0; }
+        .cta-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 3.5rem; align-items: start; }
+        .cta-title { font-size: clamp(1.6rem, 3vw, 2.3rem); color: var(--dark); text-align: center; margin-bottom: 1rem; line-height: 1.3; font-weight: 800; }
+        .cta-subtitle { text-align: center; color: var(--gray); margin-bottom: 2.75rem; font-size: 1rem; }
+        .cta-benefits { display: grid; grid-template-columns: 1fr 1fr; gap: 1.75rem 2.25rem; }
+        .cta-benefit { display: flex; gap: 0.8rem; align-items: flex-start; color: var(--gray); font-size: 0.95rem; line-height: 1.45; }
+        .cta-icon { color: var(--secondary); flex-shrink: 0; width: 26px; height: 26px; display: inline-flex; }
+        .cta-icon svg { width: 100%; height: 100%; fill: currentColor; }
+        .cta-card { background: #262626; border-radius: 14px; padding: 2.25rem; box-shadow: 0 15px 40px rgba(0,0,0,0.3); }
+        .cta-card h3 { color: white; font-size: 1.45rem; margin-bottom: 1.75rem; font-weight: 700; line-height: 1.3; }
+
+        /* POURQUOI NOUS CHOISIR */
+        .why-us-section { padding: 5rem 0; background: var(--light); text-align: center; }
+        .why-us-subtitle { color: var(--gray); font-size: 1.1rem; margin-bottom: 3rem; }
+        .why-us-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2rem; }
+        .why-us-card { background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 2.5rem 1.5rem; transition: transform 0.3s; }
+        .why-us-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+        .why-us-icon { width: 60px; height: 60px; background: #064e3b; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 1.8rem; }
+        .why-us-card h4 { color: var(--dark); font-size: 1.15rem; margin-bottom: 1rem; }
+        .why-us-card p { color: var(--gray); font-size: 0.95rem; line-height: 1.5; }
+
+        /* FOOTER */
+        .footer { background: var(--footer-bg); color: var(--footer-text); padding: 4rem 0 0; margin-top: 0; scroll-margin-top: 100px; }
+        .footer-main { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 3rem; padding-bottom: 3rem; }
+        .footer-brand .footer-logo-text { font-size: 1.5rem; font-weight: 800; color: white; margin-bottom: 1rem; display: block; }
+        .footer-brand .footer-logo-text span { color: var(--secondary); }
+        .footer-brand p { color: var(--footer-text); font-size: 0.95rem; line-height: 1.6; opacity: 0.85; }
+        .footer-col h4 { color: white; font-size: 1.05rem; font-weight: 700; margin-bottom: 1.25rem; }
+        .footer-col ul { list-style: none; }
+        .footer-col li { margin-bottom: 0.65rem; }
+        .footer-col a { color: var(--footer-text); text-decoration: none; font-size: 0.92rem; transition: all 0.2s; display: inline-block; opacity: 0.85; }
+        .footer-col a:hover { color: var(--secondary); opacity: 1; transform: translateX(3px); }
+        .footer-contact-list { list-style: none; }
+        .footer-contact-list li { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.9rem; font-size: 0.92rem; color: var(--footer-text); opacity: 0.85; }
+        .footer-contact-list a { color: var(--footer-text); text-decoration: none; transition: color 0.2s; }
+        .footer-contact-list a:hover { color: var(--secondary); }
+        .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding: 1.5rem 0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; font-size: 0.88rem; color: var(--footer-text); opacity: 0.75; }
+        .footer-legal-links { display: flex; gap: 0.5rem; align-items: center; }
+        .footer-legal-links button { background: none; border: none; color: var(--footer-text); cursor: pointer; font-size: 0.88rem; padding: 0.25rem; transition: color 0.2s; }
+        .footer-legal-links button:hover { color: white; }
+
+        /* MODALS */
+        .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 2000; overflow-y: auto; padding: 2rem 1rem; backdrop-filter: blur(4px); }
+        .modal.active { display: flex; align-items: center; justify-content: center; animation: fadeIn 0.2s ease; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        .modal-content { background: white; border-radius: 16px; max-width: 900px; width: 100%; max-height: 90vh; overflow-y: auto; position: relative; animation: modalSlide 0.3s ease; }
+        @keyframes modalSlide { from { opacity: 0; transform: scale(0.95) translateY(20px); } to { opacity: 1; transform: scale(1) translateY(0); } }
+        .modal-close { position: absolute; top: 1rem; right: 1rem; background: rgba(0,0,0,0.6); color: white; border: none; width: 40px; height: 40px; border-radius: 50%; font-size: 1.5rem; cursor: pointer; z-index: 10; display: flex; align-items: center; justify-content: center; transition: background 0.2s; }
+        .modal-close:hover { background: rgba(0,0,0,0.8); }
+        .modal-body { display: grid; grid-template-columns: 1fr 1fr; }
+        .modal-gallery { padding: 1.5rem; background: #f1f5f9; border-radius: 16px 0 0 16px; }
+        .modal-main-img-wrapper { position: relative; width: 100%; height: 400px; background: #e2e8f0; border-radius: 8px; overflow: hidden; margin-bottom: 1rem; }
+        .modal-gallery img.main-img { width: 100%; height: 100%; object-fit: cover; display: block; }
+        .modal-thumbnails { display: grid; grid-template-columns: repeat(auto-fill, minmax(70px, 1fr)); gap: 0.5rem; max-height: 160px; overflow-y: auto; padding: 0.25rem; }
+        .modal-thumbnails img { width: 100%; height: 60px; object-fit: cover; border-radius: 4px; cursor: pointer; opacity: 0.7; transition: all 0.2s; border: 2px solid transparent; }
+        .modal-thumbnails img:hover { opacity: 1; transform: scale(1.05); }
+        .modal-thumbnails img.active { opacity: 1; border-color: var(--secondary); }
+        .modal-info { padding: 2rem; display: flex; flex-direction: column; justify-content: center; }
+        .modal-info h2 { color: var(--primary); margin-bottom: 1rem; font-size: clamp(1.5rem, 3vw, 2rem); }
+        .modal-info p { color: var(--gray); line-height: 1.7; font-size: 1rem; margin-bottom: 1rem; }
+        .legal-content { max-width: 700px; padding: 2.5rem; }
+        .legal-text { line-height: 1.7; color: var(--gray); margin-top: 1rem; }
+        .legal-text p { margin-bottom: 1rem; }
+
+        /* CHAT WIDGET */
+        .chat-widget { position: fixed; bottom: 2rem; right: 2rem; z-index: 1500; }
+        .chat-toggle { width: 60px; height: 60px; border-radius: 50%; background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%); color: white; border: none; font-size: 1.5rem; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.3); transition: transform 0.2s; display: flex; align-items: center; justify-content: center; position: relative; }
+        .chat-toggle:hover { transform: scale(1.1); }
+        .chat-toggle::after { content: ''; position: absolute; width: 12px; height: 12px; background: var(--success); border-radius: 50%; top: 5px; right: 5px; border: 2px solid white; animation: pulse 2s infinite; }
+        @keyframes pulse { 0%, 100% { transform: scale(1); opacity: 1; } 50% { transform: scale(1.2); opacity: 0.7; } }
+        .chat-window { display: none; position: fixed; bottom: 6rem; right: 1rem; left: 1rem; max-width: 400px; margin-left: auto; height: 550px; max-height: calc(100vh - 8rem); background: white; border-radius: 16px; box-shadow: 0 8px 24px rgba(0,0,0,0.2); flex-direction: column; overflow: hidden; }
+        .chat-window.active { display: flex; animation: slideUp 0.3s ease; }
+        @keyframes slideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .chat-header { background: var(--primary); color: white; padding: 1rem; display: flex; justify-content: space-between; align-items: center; flex-shrink: 0; }
+        .chat-header h4 { font-size: 1rem; }
+        .chat-reset { background: rgba(255,255,255,0.2); border: none; color: white; padding: 0.35rem 0.75rem; border-radius: 4px; cursor: pointer; font-size: 0.8rem; }
+        .chat-messages { flex: 1; overflow-y: auto; padding: 1rem; background: #f8fafc; display: flex; flex-direction: column; gap: 0.75rem; }
+        .message { padding: 0.75rem 1rem; border-radius: 12px; max-width: 85%; font-size: 0.92rem; line-height: 1.4; word-wrap: break-word; animation: messageIn 0.3s ease; white-space: pre-wrap; }
+        @keyframes messageIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        .message.bot { background: white; border: 1px solid #e2e8f0; align-self: flex-start; border-bottom-left-radius: 4px; }
+        .message.user { background: var(--primary); color: white; align-self: flex-end; border-bottom-right-radius: 4px; }
+        .chat-buttons-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; margin-top: 0.5rem; align-self: flex-start; width: 100%; }
+        .chat-btn-option { background: white; border: 1px solid var(--primary); color: var(--primary); padding: 0.6rem 0.5rem; border-radius: 8px; font-size: 0.85rem; cursor: pointer; transition: all 0.2s; font-weight: 500; text-align: center; }
+        .chat-btn-option:hover { background: var(--primary); color: white; }
+        .chat-btn-option.full-width { grid-column: 1 / -1; }
+        .chat-temp-input { padding: 0.75rem; border-top: 1px solid #e2e8f0; background: white; flex-shrink: 0; display: flex; gap: 0.5rem; }
+        .chat-temp-input input { flex: 1; padding: 0.7rem 1rem; border: 1px solid #cbd5e1; border-radius: 24px; font-family: inherit; font-size: 0.92rem; outline: none; transition: border-color 0.2s; }
+        .chat-temp-input button { background: var(--primary); color: white; border: none; width: 40px; height: 40px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background 0.2s; flex-shrink: 0; }
+        .typing-indicator { display: inline-flex; gap: 4px; padding: 0.75rem 1rem; background: white; border: 1px solid #e2e8f0; border-radius: 12px; border-bottom-left-radius: 4px; align-self: flex-start; }
+        .typing-indicator span { width: 8px; height: 8px; background: var(--gray); border-radius: 50%; animation: typing 1.4s infinite; }
+        .typing-indicator span:nth-child(2) { animation-delay: 0.2s; }
+        .typing-indicator span:nth-child(3) { animation-delay: 0.4s; }
+        @keyframes typing { 0%, 60%, 100% { transform: translateY(0); opacity: 0.4; } 30% { transform: translateY(-6px); opacity: 1; } }
+
+        /* TOASTS & BANNERS */
+        .toast { position: fixed; top: 100px; left: 50%; transform: translateX(-50%) translateY(-20px); background: var(--success); color: white; padding: 1rem 1.5rem; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); z-index: 3000; opacity: 0; transition: all 0.3s ease; pointer-events: none; font-weight: 600; }
+        .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+        .toast.error { background: var(--danger); }
+        .offline-banner { display: none; position: fixed; top: 80px; left: 0; right: 0; background: var(--danger); color: white; padding: 0.5rem 1rem; text-align: center; z-index: 999; font-size: 0.9rem; }
+        .offline-banner.show { display: block; }
+        
+        /* PWA INSTALL BANNER */
+        .pwa-banner { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: var(--primary); color: white; padding: 1rem; z-index: 2500; box-shadow: 0 -4px 10px rgba(0,0,0,0.2); align-items: center; justify-content: space-between; gap: 1rem; }
+        .pwa-banner.show { display: flex; animation: slideUp 0.3s ease; }
+        .pwa-banner-text { font-weight: 600; font-size: 0.95rem; }
+        .pwa-banner-actions { display: flex; gap: 0.5rem; }
+        .pwa-btn-install { background: var(--secondary); color: white; border: none; padding: 0.5rem 1rem; border-radius: 6px; font-weight: bold; cursor: pointer; }
+        .pwa-btn-close { background: transparent; color: white; border: 1px solid rgba(255,255,255,0.5); padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; }
+
+        .mobile-menu-btn { display: none; background: none; border: none; font-size: 1.75rem; cursor: pointer; color: var(--primary); padding: 0.5rem; line-height: 1; }
+        .menu-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 999; opacity: 0; transition: opacity 0.3s ease; }
+        .menu-overlay.active { display: block; opacity: 1; }
+
+        /* RESPONSIVE */
+        @media (max-width: 968px) {
+            .mobile-menu-btn { display: block; }
+            .header-actions { display: none; }
+            .lang-selector { display: none; }
+            .nav-menu { position: fixed; top: 0; right: -100%; width: 85%; max-width: 360px; height: 100vh; background: white; flex-direction: column; padding: 0; transition: right 0.35s cubic-bezier(0.4, 0, 0.2, 1); overflow-y: auto; align-items: stretch; z-index: 1100; gap: 0; box-shadow: -4px 0 20px rgba(0,0,0,0.15); }
+            .nav-menu.active { right: 0; }
+            .mobile-menu-header { display: flex; justify-content: space-between; align-items: center; padding: 1rem 1.5rem; border-bottom: 1px solid #e2e8f0; background: var(--light); }
+            .mobile-menu-header h3 { color: var(--primary); font-size: 1.1rem; font-weight: 700; }
+            .mobile-menu-close { background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--dark); padding: 0.25rem 0.5rem; line-height: 1; }
+            .mobile-menu-body { padding: 0.5rem 0; flex: 1; }
+            .nav-links { flex-direction: column; width: 100%; gap: 0; align-items: stretch; }
+            .nav-item { width: 100%; border-bottom: 1px solid #f1f5f9; }
+            .nav-anchor { width: 100%; justify-content: space-between; padding: 1rem 1.5rem; font-size: 1rem; }
+            .nav-anchor::after { display: none; }
+            .dropdown-menu { position: static; opacity: 1; visibility: visible; transform: none; box-shadow: none; border: none; border-radius: 0; max-height: 0; overflow: hidden; padding: 0; transition: max-height 0.35s ease; background: #f8fafc; min-width: auto; }
+            .nav-item.open > .dropdown-menu { max-height: 500px; padding: 0.5rem 0; }
+            .nav-item.open .dropdown-arrow { transform: rotate(180deg); }
+            .dropdown-menu a { padding: 0.85rem 2.5rem; font-size: 0.92rem; }
+            .mobile-menu-actions { display: flex; flex-direction: column; gap: 0.75rem; padding: 1rem 1.5rem; border-top: 1px solid #e2e8f0; background: var(--light); }
+            .mobile-menu-actions .btn { width: 100%; justify-content: center; padding: 0.9rem 1.3rem; }
+            .mobile-lang-selector { display: block; padding: 1rem 1.5rem; border-top: 1px solid #e2e8f0; }
+            .mobile-lang-selector .lang-btn { width: 100%; justify-content: space-between; }
+            .mobile-lang-selector .lang-dropdown { position: static; width: 100%; margin-top: 0.5rem; box-shadow: none; border: 1px solid #e2e8f0; }
+            
+            .hero { padding: 8rem 1.5rem; min-height: 80vh; }
+            .hero-content h1 { font-size: clamp(1.75rem, 6.5vw, 2.25rem); }
+            .hero-content p { font-size: clamp(1rem, 4vw, 1.15rem); }
+            .hero-buttons { flex-direction: column; width: 100%; }
+            .hero-buttons .btn { width: 100%; font-size: 16px; }
+            
+            .experts-grid { grid-template-columns: 1fr; gap: 3rem; }
+            .experts-img-sub { right: 10px; bottom: -20px; width: 50%; }
+            
+            .cta-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+            .cta-benefits { grid-template-columns: 1fr; gap: 1.25rem; }
+            .modal-body { grid-template-columns: 1fr; }
+            .modal-gallery { border-radius: 16px 16px 0 0; padding: 1rem; }
+            .modal-main-img-wrapper { height: 250px; }
+            .modal-info { padding: 1.5rem; }
+            .services-grid { grid-template-columns: 1fr; }
+            .footer-main { grid-template-columns: 1fr; gap: 2rem; }
+            .footer-main > .footer-col:nth-child(4) { order: -1; }
+            .footer-bottom { flex-direction: column; text-align: center; }
+            .footer-legal-links { justify-content: center; }
+            .chat-widget { bottom: 1rem; right: 1rem; }
+            .chat-toggle { width: 55px; height: 55px; }
+            .chat-window { height: 500px; }
+            
+            .pwa-banner { flex-direction: column; text-align: center; }
+        }
+        @media (max-width: 480px) {
+            .header-container { height: 70px; }
+            .logo-text { font-size: 1.1rem; }
+        }
+        *:focus-visible { outline: 3px solid var(--secondary); outline-offset: 2px; }
+        @media print { .chat-widget, .header, .footer, .pwa-banner { display: none; } }
+    </style>
+</head>
+<body>
+
+    <div class="offline-banner" id="offlineBanner" data-i18n="offline_banner">Vous êtes hors ligne.</div>
+    <div class="menu-overlay" id="menuOverlay" onclick="closeMobileMenu()"></div>
+
+    <!-- PWA INSTALL BANNER -->
+    <div class="pwa-banner" id="pwaBanner">
+        <span class="pwa-banner-text" data-i18n="pwa_text">📱 Installez notre application pour un accès rapide !</span>
+        <div class="pwa-banner-actions">
+            <button class="pwa-btn-install" id="pwaInstallBtn" data-i18n="pwa_install">Installer</button>
+            <button class="pwa-btn-close" onclick="document.getElementById('pwaBanner').classList.remove('show')" data-i18n="pwa_close">Plus tard</button>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo-text" aria-label="Rénovation à Tanger">Rénovation <span>à Tanger</span></a>
+
+            <nav class="nav-menu" id="navMenu" aria-label="Navigation principale">
+                <div class="mobile-menu-header">
+                    <h3 data-i18n="menu_title">Menu</h3>
+                    <button class="mobile-menu-close" onclick="closeMobileMenu()" aria-label="Fermer">✕</button>
+                </div>
+                <div class="mobile-menu-body">
+                    <ul class="nav-links">
+                        <li class="nav-item" data-category="interieure">
+                            <a class="nav-anchor" href="#interieure" onclick="toggleMobileDropdown(event, this)">
+                                <span data-i18n="nav_int">Rénovation Intérieure</span> <span class="dropdown-arrow">▼</span>
+                            </a>
+                            <div class="dropdown-menu" id="dropdown-interieure"></div>
+                        </li>
+                        <li class="nav-item" data-category="autres">
+                            <a class="nav-anchor" href="#autres" onclick="toggleMobileDropdown(event, this)">
+                                <span data-i18n="nav_autres">Autres Services</span> <span class="dropdown-arrow">▼</span>
+                            </a>
+                            <div class="dropdown-menu" id="dropdown-autres"></div>
+                        </li>
+                        <!-- ENLACE CONTACT SOLO EN MOVIL -->
+                        <li class="nav-item">
+                            <a class="nav-anchor" href="#contact" onclick="closeMobileMenu()">
+                                <span data-i18n="nav_contact">Contact</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mobile-menu-actions">
+                    <a href="https://wa.seo-local.click/es/whatsapp-business-directory/02f99a39-9baf-48d9-ae2c-6d0e3d32510d" target="_blank" rel="noopener" class="btn btn-whatsapp" onclick="closeMobileMenu()">
+                        <span data-i18n="btn_devis">Devis Gratuit</span>
+                    </a>
+                    <a href="tel:+212670964030" class="btn btn-call" onclick="closeMobileMenu()">
+                        <span data-i18n="btn_call">Appeler</span>
+                    </a>
+                </div>
+                <div class="mobile-lang-selector">
+                    <button class="lang-btn" id="mobileLangBtn" aria-haspopup="true" aria-expanded="false">
+                        <span id="mobileCurrentFlag">🇫🇷</span>
+                        <span id="mobileCurrentLang">FR</span>
+                        <span>▼</span>
+                    </button>
+                    <div class="lang-dropdown" id="mobileLangDropdown" role="menu">
+                        <div class="lang-option active" data-lang="fr" role="menuitem">🇫 Français</div>
+                        <div class="lang-option" data-lang="es" role="menuitem">🇪 Español</div>
+                        <div class="lang-option" data-lang="ar" role="menuitem">🇲🇦 العربية</div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="lang-selector">
+                <button class="lang-btn" id="langBtn" aria-haspopup="true" aria-expanded="false">
+                    <span id="currentFlag">🇫🇷</span>
+                    <span id="currentLang">FR</span>
+                    <span>▼</span>
+                </button>
+                <div class="lang-dropdown" id="langDropdown" role="menu">
+                    <div class="lang-option active" data-lang="fr" role="menuitem">🇫🇷 Français</div>
+                    <div class="lang-option" data-lang="es" role="menuitem">🇪 Español</div>
+                    <div class="lang-option" data-lang="ar" role="menuitem">🇲🇦 العربية</div>
+                </div>
+            </div>
+
+            <div class="header-actions">
+                <!-- BOTON CONTACT ELIMINADO AQUI -->
+                <a href="https://wa.seo-local.click/es/whatsapp-business-directory/02f99a39-9baf-48d9-ae2c-6d0e3d32510d" target="_blank" rel="noopener" class="btn btn-whatsapp">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                    <span data-i18n="btn_devis">Devis Gratuit</span>
+                </a>
+            </div>
+
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu" aria-expanded="false">☰</button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-content">
+            <h1 data-i18n="hero_title">Rénovation à Tanger</h1>
+            <p data-i18n="hero_desc">Votre entreprise de rénovation à Tanger : cuisines, salles de bains, carrelage, peinture, marbre et plus. Intervention rapide à Tanger et dans ses environs.</p>
+            <div class="hero-buttons">
+                <a href="#interieure" class="btn btn-primary" data-i18n="hero_btn1">Découvrir nos services</a>
+                <a href="https://wa.seo-local.click/es/whatsapp-business-directory/02f99a39-9baf-48d9-ae2c-6d0e3d32510d" target="_blank" rel="noopener" class="btn btn-whatsapp" data-i18n="hero_btn2">Devis WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION 1: LES EXPERTS -->
+    <section class="experts-section">
+        <div class="container experts-grid">
+            <div class="experts-images">
+                <img src="https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Remplacement-de-carrelage-maroc.webp" alt="Experts Rénovation Tanger" class="experts-img-main">
+                <img src="https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Entreprise-de-Renovation-a-Maroc.webp" alt="Travaux Rénovation" class="experts-img-sub">
+            </div>
+            <div class="experts-content">
+                <h2 data-i18n="experts_title">Les Experts de la Rénovation à Tanger</h2>
+                <p data-i18n="experts_desc">Chez <strong>Rénovation à Tanger</strong>, nous sommes spécialisés dans la transformation de vos espaces intérieurs. Rénovation complète ou travaux spécifiques, nous garantissons des résultats durables avec des finitions impeccables.</p>
+                <ul class="experts-list">
+                    <li data-i18n="experts_li1">Rénovation intérieure : cuisines, salles de bains, parquets</li>
+                    <li data-i18n="experts_li2">Travaux tous corps d'état : maçonnerie, plâtre, peinture</li>
+                    <li data-i18n="experts_li3">Devis gratuit et sans engagement sous 24h</li>
+                    <li data-i18n="experts_li4">Artisans qualifiés à Tanger et ses environs</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+        <section id="interieure" class="services-section">
+            <h2 class="section-title" data-i18n="nav_int">Rénovation Intérieure</h2>
+            <div class="services-grid" id="grid-interieure"></div>
+        </section>
+        <section id="autres" class="services-section">
+            <h2 class="section-title" data-i18n="nav_autres">Autres Services</h2>
+            <div class="services-grid" id="grid-autres"></div>
+        </section>
+    </main>
+
+    <section class="reviews-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="reviews_title">Ce que disent nos clients</h2>
+            <div class="reviews-grid" id="reviewsGrid"></div>
+        </div>
+    </section>
+
+    <section class="why-us-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="why_title">Pourquoi Nous Choisir ?</h2>
+            <p class="why-us-subtitle" data-i18n="why_subtitle">Les garanties qui font notre différence</p>
+            <div class="why-us-grid">
+                <div class="why-us-card">
+                    <div class="why-us-icon">👷‍♂️</div>
+                    <h4 data-i18n="why_c1_title">Artisans Qualifiés</h4>
+                    <p data-i18n="why_c1_desc">Équipe d'artisans certifiés avec plus de 10 ans d'expérience.</p>
+                </div>
+                <div class="why-us-card">
+                    <div class="why-us-icon">📋</div>
+                    <h4 data-i18n="why_c2_title">Devis Gratuit 24h</h4>
+                    <p data-i18n="why_c2_desc">Devis détaillé et transparent sous 24h, sans engagement.</p>
+                </div>
+                <div class="why-us-card">
+                    <div class="why-us-icon">🛡️</div>
+                    <h4 data-i18n="why_c3_title">Garantie Professionnelle</h4>
+                    <p data-i18n="why_c3_desc">Tous nos travaux sont couverts par une garantie professionnelle.</p>
+                </div>
+                <div class="why-us-card">
+                    <div class="why-us-icon">⏱️</div>
+                    <h4 data-i18n="why_c4_title">Respect des Délais</h4>
+                    <p data-i18n="why_c4_desc">Planning détaillé et respect strict des délais annoncés.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container cta-grid">
+            <div class="cta-left">
+                <h2 class="cta-title" data-i18n="cta_title">Vous imaginez votre espace rénové, mais ne savez pas par où commencer ?</h2>
+                <p class="cta-subtitle" data-i18n="cta_subtitle">Laissez-nous vous guider vers la transformation parfaite.</p>
+                <div class="cta-benefits">
+                    <div class="cta-benefit">
+                        <span class="cta-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg></span>
+                        <span data-i18n="cta_b1">Expertise Technique de Haut Niveau</span>
+                    </div>
+                    <div class="cta-benefit">
+                        <span class="cta-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 14c-1.66 0-3 1.34-3 3 0 1.31-1.16 2-2 2 .92 1.22 2.49 2 4 2 2.21 0 4-1.79 4-4 0-1.66-1.34-3-3-3zm13.71-9.37l-1.34-1.34c-.39-.39-1.02-.39-1.41 0L9 12.25 11.75 15l8.96-8.96c.39-.39.39-1.02 0-1.41z"/></svg></span>
+                        <span data-i18n="cta_b5">Design Innovant et Créatif</span>
+                    </div>
+                    <div class="cta-benefit">
+                        <span class="cta-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg></span>
+                        <span data-i18n="cta_b2">Approche Personnalisée et Sur Mesure</span>
+                    </div>
+                    <div class="cta-benefit">
+                        <span class="cta-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.53 11.06L15.47 10l-4.88 4.88-2.12-2.12-1.06 1.06L10.59 17l5.94-5.94zM19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11z"/></svg></span>
+                        <span data-i18n="cta_b6">Respect des Délais et Budgets Fixés</span>
+                    </div>
+                    <div class="cta-benefit">
+                        <span class="cta-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/></svg></span>
+                        <span data-i18n="cta_b3">Gestion de Projet Efficace et Transparente</span>
+                    </div>
+                    <div class="cta-benefit">
+                        <span class="cta-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11.99 18.54l-7.37-5.73L3 14.07l9 7 9-7-1.63-1.27-7.38 5.74zM12 16l7.36-5.73L21 9l-9-7-9 7 1.63 1.27L12 16z"/></svg></span>
+                        <span data-i18n="cta_b7">Sélection Rigoureuse des Matériaux</span>
+                    </div>
+                    <div class="cta-benefit">
+                        <span class="cta-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg></span>
+                        <span data-i18n="cta_b4">Qualité et Durabilité Garanties</span>
+                    </div>
+                    <div class="cta-benefit">
+                        <span class="cta-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg></span>
+                        <span data-i18n="cta_b8">Devis Gratuit et Sans Engagement</span>
+                    </div>
+                </div>
+            </div>
+            <div class="cta-card">
+                <h3 data-i18n="cta_form_title">Demandez votre devis dès aujourd'hui !</h3>
+                <script defer data-active data-widget-type="group" data-person="f0b08853-8133-424d-a62c-7e346d54700a" src="https://wa.seo-local.click/install-widget/bundle.js?key=02f99a39-9baf-48d9-ae2c-6d0e3d32510d"></script>
+                <div data-active id="whatapp-people-widget-f0b08853-8133-424d-a62c-7e346d54700a"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER CON ID CONTACT -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <span class="footer-logo-text">Rénovation <span>à Tanger</span></span>
+                    <p data-i18n="footer_brand_desc">Votre partenaire de confiance pour tous vos projets de rénovation à Tanger.</p>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="nav_int">Rénovation Intérieure</h4>
+                    <ul id="footer-list-int"></ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="nav_autres">Autres Services</h4>
+                    <ul id="footer-list-autres"></ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer_contact">Contact</h4>
+                    <ul class="footer-contact-list">
+                        <li><span>📞</span><a href="tel:+212670964030">+212 670 964 030</a></li>
+                        <li><span>💬</span><a href="https://wa.seo-local.click/es/whatsapp-business-directory/02f99a39-9baf-48d9-ae2c-6d0e3d32510d" target="_blank" rel="noopener">WhatsApp Devis</a></li>
+                        <li><span>📍</span><span data-i18n="footer_location">Tanger</span></li>
+                        <li><span>🕐</span><span data-i18n="footer_hours">Lun-Sam: 8h-18h</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div data-i18n="footer_copy">© 2026 Entreprise de Rénovation à Tanger.</div>
+                <div class="footer-legal-links">
+                    <button onclick="openLegalModal('mentions')" data-i18n="legal_mentions">Mentions légales</button>
+                    <span>·</span>
+                    <button onclick="openLegalModal('confidentialite')" data-i18n="legal_privacy">Politique de confidentialité</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODALS -->
+    <div id="serviceModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()" aria-label="Fermer">&times;</button>
+            <div class="modal-body">
+                <div class="modal-gallery">
+                    <div class="modal-main-img-wrapper"><img id="modalMainImage" class="main-img" src="" alt=""></div>
+                    <div class="modal-thumbnails" id="modalThumbnails"></div>
+                </div>
+                <div class="modal-info">
+                    <h2 id="modalTitle"></h2>
+                    <p id="modalDescription"></p>
+                    <a href="https://wa.seo-local.click/es/whatsapp-business-directory/02f99a39-9baf-48d9-ae2c-6d0e3d32510d" target="_blank" rel="noopener" class="btn btn-whatsapp btn-large" data-i18n="modal_cta">Demander un devis gratuit</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="legalModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="legalTitle">
+        <div class="modal-content legal-content">
+            <button class="modal-close" onclick="closeLegalModal()" aria-label="Fermer">&times;</button>
+            <h2 id="legalTitle"></h2>
+            <div id="legalText" class="legal-text"></div>
+        </div>
+    </div>
+
+    <!-- CHAT WIDGET -->
+    <div class="chat-widget" id="chatWidget">
+        <button class="chat-toggle" id="chatToggle" aria-label="Ouvrir le chat" aria-expanded="false">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>
+        </button>
+        <div class="chat-window" id="chatWindow" role="dialog" aria-label="Chat">
+            <div class="chat-header">
+                <h4 data-i18n="chat_title">Assistant Rénovation à Tanger</h4>
+                <button onclick="resetChat()" class="chat-reset" data-i18n="chat_reset">Réinitialiser</button>
+            </div>
+            <div class="chat-messages" id="chatMessages" aria-live="polite"></div>
+            <div class="chat-temp-input" id="chatTempInput" style="display:none;">
+                <input type="text" id="tempInputField" placeholder="" autocomplete="off">
+                <button onclick="submitTempInput()" aria-label="Envoyer">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="toast" id="toast" role="alert" aria-live="assertive"></div>
+
+    <script>
+    // --- TRADUCCIONES ---
+    const content = {
+        fr: {
+            nav_int: "Rénovation Intérieure", nav_autres: "Autres Services", nav_contact: "Contact",
+            btn_devis: "Devis Gratuit", btn_call: "Appeler", menu_title: "Menu",
+            hero_title: "Rénovation à Tanger",
+            hero_desc: "Votre entreprise de rénovation à Tanger : cuisines, salles de bains, carrelage, peinture, marbre et plus. Intervention rapide à Tanger et dans ses environs.",
+            hero_btn1: "Découvrir nos services", hero_btn2: "Devis WhatsApp",
+            experts_title: "Les Experts de la Rénovation à Tanger",
+            experts_desc: "Chez <strong>Rénovation à Tanger</strong>, nous sommes spécialisés dans la transformation de vos espaces intérieurs. Rénovation complète ou travaux spécifiques, nous garantissons des résultats durables avec des finitions impeccables.",
+            experts_li1: "Rénovation intérieure : cuisines, salles de bains, parquets",
+            experts_li2: "Travaux tous corps d'état : maçonnerie, plâtre, peinture",
+            experts_li3: "Devis gratuit et sans engagement sous 24h",
+            experts_li4: "Artisans qualifiés à Tanger et ses environs",
+            reviews_title: "Ce que disent nos clients",
+            cta_title: "Vous imaginez votre espace rénové, mais ne savez pas par où commencer ?",
+            cta_subtitle: "Laissez-nous vous guider vers la transformation parfaite.",
+            cta_b1: "Expertise Technique de Haut Niveau", cta_b2: "Approche Personnalisée et Sur Mesure",
+            cta_b3: "Gestion de Projet Efficace et Transparente", cta_b4: "Qualité et Durabilité Garanties",
+            cta_b5: "Design Innovant et Créatif", cta_b6: "Respect des Délais et Budgets Fixés",
+            cta_b7: "Sélection Rigoureuse des Matériaux", cta_b8: "Devis Gratuit et Sans Engagement",
+            cta_form_title: "Demandez votre devis dès aujourd'hui !",
+            why_title: "Pourquoi Nous Choisir ?", why_subtitle: "Les garanties qui font notre différence",
+            why_c1_title: "Artisans Qualifiés", why_c1_desc: "Équipe d'artisans certifiés avec plus de 10 ans d'expérience.",
+            why_c2_title: "Devis Gratuit 24h", why_c2_desc: "Devis détaillé et transparent sous 24h, sans engagement.",
+            why_c3_title: "Garantie Professionnelle", why_c3_desc: "Tous nos travaux sont couverts par une garantie professionnelle.",
+            why_c4_title: "Respect des Délais", why_c4_desc: "Planning détaillé et respect strict des délais annoncés.",
+            footer_brand_desc: "Votre partenaire de confiance pour tous vos projets de rénovation à Tanger.",
+            footer_contact: "Contact", footer_location: "Tanger", footer_hours: "Lun-Sam: 8h-18h",
+            footer_copy: "© 2026 Entreprise de Rénovation à Tanger.",
+            legal_mentions: "Mentions légales", legal_privacy: "Politique de confidentialité",
+            modal_cta: "Demander un devis gratuit",
+            chat_title: "Assistant Rénovation à Tanger", chat_reset: "Réinitialiser",
+            offline_banner: "Vous êtes hors ligne.",
+            pwa_text: "📱 Installez notre application pour un accès rapide !", pwa_install: "Installer", pwa_close: "Plus tard",
+            toast_sent: "Message envoyé via WhatsApp !", toast_error: "Veuillez remplir ce champ", toast_email_invalid: "Email invalide",
+            reset_confirm: "Réinitialiser la conversation ?", read_more: "Voir plus →",
+            rev1_name: "Ahmed B.", rev1_city: "Tanger", rev1_text: "Excellent travail sur ma cuisine. Équipe professionnelle et respect des délais. Je recommande vivement !",
+            rev2_name: "Sophie M.", rev2_city: "Tanger (Malabata)", rev2_text: "Rénovation complète de ma salle de bain. Résultat magnifique et finitions impeccables. Merci !",
+            rev3_name: "Karim T.", rev3_city: "Tanger (Centre-ville)", rev3_text: "Travaux de plâtre et peinture parfaits. Service au top et artisans très qualifiés.",
+            chat_welcome: "Bonjour ! 👋 Je suis l'assistant Rénovation à Tanger.",
+            chat_intro: "Je vais vous aider à obtenir un devis gratuit et personnalisé. Commençons !",
+            chat_ask_service: "Quel service vous intéresse ?",
+            chat_ask_city: "Dans quel quartier de Tanger se trouve votre projet ?",
+            chat_ask_scope: "Quelle est l'envergure de votre projet ?",
+            chat_contact_intro: "Parfait ! 🎉 Maintenant, laissez-moi vos coordonnées pour vous envoyer le devis gratuit.",
+            chat_ask_name: "Quel est votre nom ?", chat_ask_email: "Quel est votre email ?", chat_ask_phone: "Quel est votre numéro de téléphone ?",
+            chat_summary_title: "Parfait ! Voici le résumé de votre demande :",
+            chat_btn_send: "📱 Envoyer par WhatsApp", chat_btn_restart: "🔄 Nouvelle demande",
+            opt_petit: "📏 Petit projet", opt_moyen: "📐 Projet moyen", opt_grand: "🏗️ Grand projet", opt_urgent: "⚡ Urgent",
+            ph_name: "Votre nom...", ph_email: "votre@email.com", ph_phone: "+212 6XX XXX XXX",
+            legal_mentions_title: "Mentions légales",
+            legal_mentions_text: "<p><strong>Rénovation à Tanger</strong><br>Siège social : Tanger, Maroc<br>Téléphone : +212 670 964 030</p><p>Les contenus de ce site sont la propriété de Rénovation à Tanger et sont protégés par le droit d'auteur.</p>",
+            legal_privacy_title: "Politique de confidentialité",
+            legal_privacy_text: "<p>Nous nous engageons à protéger vos données personnelles conformément au RGPD et à la loi marocaine 09-08.</p><p><strong>Utilisation :</strong> Uniquement pour répondre à vos demandes. Jamais vendues à des tiers.</p>"
+        },
+        es: {
+            nav_int: "Renovación Interior", nav_autres: "Otros Servicios", nav_contact: "Contacto",
+            btn_devis: "Presupuesto Gratis", btn_call: "Llamar", menu_title: "Menú",
+            hero_title: "Renovación en Tánger",
+            hero_desc: "Su empresa de renovación en Tánger: cocinas, baños, azulejos, pintura, mármol y más. Intervención rápida en Tánger y sus alrededores.",
+            hero_btn1: "Descubrir servicios", hero_btn2: "Presupuesto WhatsApp",
+            experts_title: "Los Expertos en Renovación en Tánger",
+            experts_desc: "En <strong>Renovación Tánger</strong>, estamos especializados en la transformación de sus espacios interiores. Renovación completa o trabajos específicos, garantizamos resultados duraderos con acabados impecables.",
+            experts_li1: "Renovación interior: cocinas, baños, parquet",
+            experts_li2: "Trabajos generales: albañilería, yeso, pintura",
+            experts_li3: "Presupuesto gratuito y sin compromiso en 24h",
+            experts_li4: "Artesanos cualificados en Tánger y alrededores",
+            reviews_title: "Lo que dicen nuestros clientes",
+            cta_title: "¿Se imagina su espacio renovado, pero no sabe por dónde empezar?",
+            cta_subtitle: "Déjenos guiarle hacia la transformación perfecta.",
+            cta_b1: "Experiencia Técnica de Alto Nivel", cta_b2: "Enfoque Personalizado y a Medida",
+            cta_b3: "Gestión de Proyecto Eficaz y Transparente", cta_b4: "Calidad y Durabilidad Garantizadas",
+            cta_b5: "Diseño Innovador y Creativo", cta_b6: "Respeto de Plazos y Presupuestos",
+            cta_b7: "Selección Rigurosa de Materiales", cta_b8: "Presupuesto Gratuito y Sin Compromiso",
+            cta_form_title: "¡Solicite su presupuesto hoy mismo!",
+            why_title: "¿Por Qué Elegirnos?", why_subtitle: "Las garantías que marcan la diferencia",
+            why_c1_title: "Artesanos Cualificados", why_c1_desc: "Equipo de artesanos certificados con más de 10 años de experiencia.",
+            why_c2_title: "Presupuesto Gratis 24h", why_c2_desc: "Presupuesto detallado y transparente en 24h, sin compromiso.",
+            why_c3_title: "Garantía Profesional", why_c3_desc: "Todos nuestros trabajos están cubiertos por garantía profesional.",
+            why_c4_title: "Respeto de Plazos", why_c4_desc: "Planificación detallada y respeto estricto de los plazos.",
+            footer_brand_desc: "Tu socio de confianza para todos tus proyectos de renovación en Tánger.",
+            footer_contact: "Contacto", footer_location: "Tánger", footer_hours: "Lun-Sáb: 8h-18h",
+            footer_copy: "© 2026 Empresa de Renovación en Tánger.",
+            legal_mentions: "Aviso legal", legal_privacy: "Política de privacidad",
+            modal_cta: "Solicitar presupuesto gratis",
+            chat_title: "Asistente Renovación Tánger", chat_reset: "Reiniciar",
+            offline_banner: "Estás sin conexión.",
+            pwa_text: "📱 ¡Instala nuestra app para acceso rápido!", pwa_install: "Instalar", pwa_close: "Más tarde",
+            toast_sent: "¡Mensaje enviado por WhatsApp!", toast_error: "Por favor completa este campo", toast_email_invalid: "Email inválido",
+            reset_confirm: "¿Reiniciar la conversación?", read_more: "Ver más →",
+            rev1_name: "Ahmed B.", rev1_city: "Tánger", rev1_text: "Excelente trabajo en mi cocina. Equipo profesional y respeto de los plazos. ¡Muy recomendable!",
+            rev2_name: "Sophie M.", rev2_city: "Tánger (Malabata)", rev2_text: "Renovación completa de mi baño. Resultado magnífico y acabados impecables. ¡Gracias!",
+            rev3_name: "Karim T.", rev3_city: "Tánger (Centro)", rev3_text: "Trabajos de yeso y pintura perfectos. Servicio de primera y artesanos muy cualificados.",
+            chat_welcome: "¡Hola! 👋 Soy el asistente de Renovación Tánger.",
+            chat_intro: "Te ayudaré a obtener un presupuesto gratuito y personalizado. ¡Empecemos!",
+            chat_ask_service: "¿Qué servicio te interesa?",
+            chat_ask_city: "¿En qué barrio de Tánger se encuentra tu proyecto?",
+            chat_ask_scope: "¿Cuál es la envergadura de tu proyecto?",
+            chat_contact_intro: "¡Perfecto! 🎉 Ahora déjame tus datos para enviarte el presupuesto gratuito.",
+            chat_ask_name: "¿Cuál es tu nombre?", chat_ask_email: "¿Cuál es tu email?", chat_ask_phone: "¿Cuál es tu número de teléfono?",
+            chat_summary_title: "¡Perfecto! Aquí tienes el resumen de tu solicitud:",
+            chat_btn_send: "📱 Enviar por WhatsApp", chat_btn_restart: "🔄 Nueva solicitud",
+            opt_petit: "📏 Proyecto pequeño", opt_moyen: "📐 Proyecto mediano", opt_grand: "🏗️ Gran proyecto", opt_urgent: "⚡ Urgente",
+            ph_name: "Tu nombre...", ph_email: "tu@email.com", ph_phone: "+212 6XX XXX XXX",
+            legal_mentions_title: "Aviso legal",
+            legal_mentions_text: "<p><strong>Renovación Tánger</strong><br>Sede social: Tánger, Marruecos<br>Teléfono: +212 670 964 030</p><p>Los contenidos de este sitio son propiedad de Renovación Tánger y están protegidos por derechos de autor.</p>",
+            legal_privacy_title: "Política de privacidad",
+            legal_privacy_text: "<p>Nos comprometemos a proteger tus datos personales conforme al RGPD y la ley marroquí 09-08.</p><p><strong>Uso:</strong> Solo para responder a tus solicitudes. Nunca se venden a terceros.</p>"
+        },
+        ar: {
+            nav_int: "تجديد داخلي", nav_autres: "خدمات أخرى", nav_contact: "اتصل بنا",
+            btn_devis: "عرض أسعار مجاني", btn_call: "اتصل", menu_title: "القائمة",
+            hero_title: "التجديد في طنجة",
+            hero_desc: "شركتكم للتجديد في طنجة: مطابخ، حمامات، بلاط، دهان، رخام وأكثر. تدخل سريع في طنجة وضواحيها.",
+            hero_btn1: "اكتشف خدماتنا", hero_btn2: "واتساب",
+            experts_title: "خبراء التجديد في طنجة",
+            experts_desc: "في <strong>التجديد بطنجة</strong>، نحن متخصصون في تحويل مساحاتكم الداخلية. تجديد شامل أو أعمال محددة، نضمن نتائج دائمة مع تشطيبات لا تشوبها شائبة.",
+            experts_li1: "تجديد داخلي: مطابخ، حمامات، باركيه",
+            experts_li2: "أشغال عامة: بناء، جص، دهان",
+            experts_li3: "عرض أسعار مجاني وبدون التزام في 24 ساعة",
+            experts_li4: "حرفيون مؤهلون في طنجة وضواحيها",
+            reviews_title: "ماذا يقول عملاؤنا",
+            cta_title: "هل تتخيل مساحتك المجددة، لكن لا تعرف من أين تبدأ؟",
+            cta_subtitle: "دعنا نرشدك نحو التحول المثالي.",
+            cta_b1: "خبرة تقنية عالية المستوى", cta_b2: "نهج شخصي وحسب الطلب",
+            cta_b3: "إدارة مشروع فعالة وشفافة", cta_b4: "جودة ومتانة مضمونة",
+            cta_b5: "تصميم مبتكر وخلاق", cta_b6: "احترام الآجال والميزانيات",
+            cta_b7: "اختيار دقيق للمواد", cta_b8: "عرض أسعار مجاني وبدون التزام",
+            cta_form_title: "اطلب عرض أسعارك اليوم!",
+            why_title: "لماذا تختارنا؟", why_subtitle: "الضمانات التي تصنع الفرق",
+            why_c1_title: "حرفيون مؤهلون", why_c1_desc: "فريق من الحرفيين المعتمدين بخبرة تزيد عن 10 سنوات.",
+            why_c2_title: "عرض أسعار مجاني 24 س", why_c2_desc: "عرض أسعار مفصل وشفاف في 24 ساعة، بدون التزام.",
+            why_c3_title: "ضمان مهني", why_c3_desc: "جميع أعمالنا مشمولة بضمان مهني.",
+            why_c4_title: "احترام المواعيد", why_c4_desc: "تخطيط مفصل واحترام صارم للمواعيد المعلنة.",
+            footer_brand_desc: "شريكك الموثوق لجميع مشاريع التجديد في طنجة.",
+            footer_contact: "اتصل", footer_location: "طنجة", footer_hours: "الإثنين-السبت: 8-18",
+            footer_copy: "© 2026 شركة تجديد في طنجة.",
+            legal_mentions: "إشعار قانوني", legal_privacy: "سياسة الخصوصية",
+            modal_cta: "اطلب عرض أسعار مجاني",
+            chat_title: "مساعد التجديد في طنجة", chat_reset: "إعادة",
+            offline_banner: "أنت غير متصل.",
+            pwa_text: "📱 قم بتثبيت تطبيقنا للوصول السريع!", pwa_install: "تثبيت", pwa_close: "لاحقا",
+            toast_sent: "تم إرسال الرسالة عبر واتساب!", toast_error: "يرجى ملء هذا الحقل", toast_email_invalid: "بريد إلكتروني غير صالح",
+            reset_confirm: "إعادة تعيين المحادثة؟", read_more: "← اقرأ المزيد",
+            rev1_name: "أحمد ب.", rev1_city: "طنجة", rev1_text: "عمل ممتاز في مطبخي. فريق محترم واحترام المواعيد. أنصح بشدة!",
+            rev2_name: "صوفي م.", rev2_city: "طنجة (ملابطا)", rev2_text: "تجديد كامل لحمامي. نتيجة رائعة وتشطيبات لا تشوبها شائبة. شكرا!",
+            rev3_name: "كريم ت.", rev3_city: "طنجة (وسط المدينة)", rev3_text: "أعمال الجص والدهان مثالية. خدمة ممتازة وحرفيون مؤهلون جدا.",
+            chat_welcome: "مرحبا! 👋 أنا مساعد التجديد في طنجة.",
+            chat_intro: "سأساعدك في الحصول على عرض أسعار مجاني ومخصص. لنبدأ!",
+            chat_ask_service: "ما الخدمة التي تهمك؟",
+            chat_ask_city: "في أي حي من طنجة يقع مشروعك؟",
+            chat_ask_scope: "ما هو حجم مشروعك؟",
+            chat_contact_intro: "ممتاز! 🎉 الآن اترك بياناتك لإرسال عرض الأسعار المجاني.",
+            chat_ask_name: "ما هو اسمك؟", chat_ask_email: "ما هو بريدك الإلكتروني؟", chat_ask_phone: "ما هو رقم هاتفك؟",
+            chat_summary_title: "ممتاز! إليك ملخص طلبك:",
+            chat_btn_send: "📱 إرسال عبر واتساب", chat_btn_restart: "🔄 طلب جديد",
+            opt_petit: "📏 مشروع صغير", opt_moyen: "📐 مشروع متوسط", opt_grand: "🏗️ مشروع كبير", opt_urgent: "⚡ عاجل",
+            ph_name: "اسمك...", ph_email: "بريدك@الإلكتروني.com", ph_phone: "+212 6XX XXX XXX",
+            legal_mentions_title: "إشعار قانوني",
+            legal_mentions_text: "<p><strong>التجديد في طنجة</strong><br>المقر: طنجة، المغرب<br>الهاتف: +212 670 964 030</p><p>محتويات هذا الموقع محمية بحقوق الطبع والنشر.</p>",
+            legal_privacy_title: "سياسة الخصوصية",
+            legal_privacy_text: "<p>نلتزم بحماية بياناتك الشخصية وفقا لـ RGPD والقانون المغربي 09-08.</p><p><strong>الاستخدام:</strong> فقط للرد على طلباتك. لا تباع لأطراف ثالثة.</p>"
+        }
+    };
+
+    // --- DESCRIPCIONES DE SERVICIOS ---
+    const serviceDesc = {
+        fr: {
+            maconnerie: "Travaux de Maçonnerie Générale à Tanger. Construction et rénovation : murs et cloisons, création d'extensions, pose de dallage et chapes, réparations structurelles. Maçons qualifiés, assurés et expérimentés. Travail soigné, respect des délais et matériaux de qualité supérieure. Intervention rapide et soignée à Tanger et dans ses environs.",
+            cuisine: "Rénovation de Cuisines Sur Mesure à Tanger. Donnez une seconde vie à votre cuisine grâce à notre savoir-faire artisanal. Rénovation de comptoirs, crédences, meubles sur mesure, installation d'électroménagers. Design moderne et fonctionnel. Intervention rapide à Tanger et dans ses environs.",
+            salledebain: "Rénovation de Salle de Bains à Tanger. Transformez votre salle de bains : rénovation complète, remplacement de carrelage, robinetterie haut de gamme, douche italienne, meubles sur mesure. Finitions soignées. Intervention rapide à Tanger et dans ses environs.",
+            carrelage: "Rénovation de Carrelage à Tanger. Pose et remplacement de carrelage mural et sol, réparation de joints. Large choix : grès cérame, porcelaine, zellige. Finitions impeccables. Intervention rapide à Tanger et dans ses environs.",
+            parquet: "Rénovation de Parquet à Tanger. Ponçage, vitrification, réparation de rayures, pose de parquet massif ou flottant. Finitions haut de gamme. Intervention rapide à Tanger et dans ses environs.",
+            marbre: "Rénovation de Marbre à Tanger. Polissage professionnel, réparation de fissures, traitement anti-tâches, restauration de plans de travail, sols et escaliers. Intervention rapide à Tanger et dans ses environs.",
+            cloisons: "Pose de Cloisons et Faux Plafonds à Tanger. Cloisons amovibles, faux plafonds suspendus, niches décoratives et isolation phonique. Pose rapide et propre. Intervention à Tanger et dans ses environs.",
+            platre: "Travaux Plâtre à Tanger. Enduits muraux lisses et décoratifs, faux plafonds, moulures, corniches, réparation de fissures. Finitions impeccables. Intervention rapide à Tanger et dans ses environs.",
+            menuiserie: "Travaux de Menuiserie à Tanger. Portes, fenêtres, placards, escaliers et meubles sur mesure (bois, alu, PVC). Création, installation et réparation. Intervention rapide à Tanger et dans ses environs.",
+            aluminium: "Travaux Aluminium à Tanger. Fabrication et installation sur mesure : fenêtres, portes, baies vitrées, vérandas, garde-corps. Profils haute qualité, double vitrage. Intervention rapide à Tanger et dans ses environs.",
+            inox: "Travaux Inox à Tanger. Garde-corps, rampes d'escalier, balustrades, portails, grilles, cuisines professionnelles. Soudures TIG de haute précision. Intervention rapide à Tanger et dans ses environs.",
+            peinture: "Peinture et Décoration à Tanger. Peinture intérieure et extérieure, papiers peints, moulures, effets spéciaux. Harmonisation des couleurs et matériaux premium. Intervention rapide à Tanger et dans ses environs.",
+            fenetres: "Fenêtres et Portes à Tanger. Installation professionnelle de portes intérieures/extérieures et fenêtres isolantes (PVC, bois, alu). Sécurité optimale et design sur mesure. Intervention à Tanger."
+        },
+        es: {
+            maconnerie: "Albañilería General en Tánger. Muros, tabiques, extensiones, soleras, reparaciones estructurales. Albañiles cualificados y asegurados. Intervención rápida en Tánger y sus alrededores.",
+            cuisine: "Renovación de Cocinas a Medida en Tánger. Encimeras, salpicaderos, muebles a medida, electrodomésticos. Diseño funcional. Intervención rápida en Tánger y sus alrededores.",
+            salledebain: "Renovación de Baños en Tánger. Azulejos, grifería alta gama, ducha italiana, muebles a medida. Acabados cuidados. Intervención rápida en Tánger y sus alrededores.",
+            carrelage: "Renovación de Azulejos en Tánger. Colocación en muros y suelos, juntas. Gres porcelánico, zellige. Acabados impecables. Intervención rápida en Tánger y sus alrededores.",
+            parquet: "Renovación de Parquet en Tánger. Lijado, barnizado, reparación, parquet macizo o flotante. Acabados alta gama. Intervención rápida en Tánger y sus alrededores.",
+            marbre: "Renovación de Mármol en Tánger. Pulido profesional, reparación grietas, antimanchas, encimeras, suelos, escaleras. Intervención rápida en Tánger y sus alrededores.",
+            cloisons: "Tabiques y Techos Falsos en Tánger. Tabiques móviles, techos suspendidos, nichos, aislamiento acústico. Colocación rápida. Intervención en Tánger y sus alrededores.",
+            platre: "Trabajos de Yeso en Tánger. Enlucidos lisos/decorativos, techos falsos, molduras, cornisas, grietas. Acabados impecables. Intervención rápida en Tánger y sus alrededores.",
+            menuiserie: "Carpintería en Tánger. Puertas, ventanas, armarios, escaleras, muebles a medida (madera, alu, PVC). Creación y reparación. Intervención rápida en Tánger y sus alrededores.",
+            aluminium: "Trabajos de Aluminio en Tánger. Ventanas, puertas, ventanales, verandas, barandillas. Perfiles alta calidad, doble acristalamiento. Intervención rápida en Tánger y sus alrededores.",
+            inox: "Trabajos de Inox en Tánger. Barandillas, pasamanos, portones, rejas, cocinas profesionales. Soldaduras TIG precisión. Intervención rápida en Tánger y sus alrededores.",
+            peinture: "Pintura y Decoración en Tánger. Pintura interior/exterior, papeles pintados, molduras, efectos especiales. Materiales premium. Intervención rápida en Tánger y sus alrededores.",
+            fenetres: "Ventanas y Puertas en Tánger. Instalación profesional de puertas y ventanas aislantes (PVC, madera, alu). Seguridad y diseño. Intervención en Tánger."
+        },
+        ar: {
+            maconnerie: "بناء عام في طنجة. جدران، فواصل، توسعات، أرضيات، إصلاحات هيكلية. بناؤون مؤهلون. تدخل سريع في طنجة وضواحيها.",
+            cuisine: "تجديد المطابخ في طنجة. طاولات، خزائن، أثاث مخصص، أجهزة كهربائية. تصميم عملي. تدخل سريع في طنجة وضواحيها.",
+            salledebain: "تجديد الحمامات في طنجة. بلاط، حنفيات فاخرة، دش إيطالي، أثاث مخصص. تشطيبات دقيقة. تدخل سريع في طنجة وضواحيها.",
+            carrelage: "تجديد البلاط في طنجة. تركيب الجدران والأرضيات، الفواصل. خزف، زليج. تشطيبات دقيقة. تدخل سريع في طنجة وضواحيها.",
+            parquet: "تجديد الباركيه في طنجة. صقل، تلميع، إصلاح، باركيه صلب أو عائم. تشطيبات فاخرة. تدخل سريع في طنجة وضواحيها.",
+            marbre: "تجديد الرخام في طنجة. تلميع احترافي، إصلاح الشقوق، مضاد للبقع، طاولات، سلالم. تدخل سريع في طنجة وضواحيها.",
+            cloisons: "جدران وأسقف مستعارة في طنجة. جدران متحركة، أسقف معلقة، تجاويف، عزل صوتي. تركيب سريع. تدخل في طنجة وضواحيها.",
+            platre: "أعمال الجص في طنجة. طلاء سلس/زخرفي، أسقف مستعارة، قوالب، أفاريز، شقوق. تشطيبات دقيقة. تدخل سريع في طنجة وضواحيها.",
+            menuiserie: "نجارة في طنجة. أبواب، نوافذ، خزائن، سلالم، أثاث مخصص (خشب، ألومنيوم، PVC). إنشاء وإصلاح. تدخل سريع في طنجة وضواحيها.",
+            aluminium: "أشغال الألومنيوم في طنجة. نوافذ، أبواب، واجهات زجاجية، شرفات، درابزين. مقاطع عالية الجودة. تدخل سريع في طنجة وضواحيها.",
+            inox: "أشغال الإينوكس في طنجة. درابزين، بوابات، شبابيك، مطابخ احترافية. لحام TIG دقيق. تدخل سريع في طنجة وضواحيها.",
+            peinture: "دهان وديكور في طنجة. دهان داخلي/خارجي، ورق جدران، قوالب، تأثيرات خاصة. مواد متميزة. تدخل سريع في طنجة وضواحيها.",
+            fenetres: "نوافذ وأبواب في طنجة. تركيب احترافي لأبواب ونوافذ عازلة (PVC، خشب، ألومنيوم). أمان وتصميم. تدخل في طنجة."
+        }
+    };
+
+    const serviceTitles = {
+        fr: { maconnerie: "Maçonnerie Générale", cuisine: "Rénovation de Cuisines", salledebain: "Salle de Bains", carrelage: "Carrelage", parquet: "Parquet", marbre: "Rénovation de Marbre", cloisons: "Cloisons & Faux Plafonds", platre: "Travaux Plâtre", menuiserie: "Menuiserie", aluminium: "Travaux Aluminium", inox: "Travaux Inox", peinture: "Peinture & Décoration", fenetres: "Fenêtres & Portes" },
+        es: { maconnerie: "Albañilería General", cuisine: "Renovación de Cocinas", salledebain: "Baños", carrelage: "Azulejos", parquet: "Parquet", marbre: "Renovación de Mármol", cloisons: "Tabiques y Techos Falsos", platre: "Trabajos de Yeso", menuiserie: "Carpintería", aluminium: "Trabajos de Aluminio", inox: "Trabajos de Inox", peinture: "Pintura y Decoración", fenetres: "Ventanas y Puertas" },
+        ar: { maconnerie: "بناء عام", cuisine: "تجديد المطابخ", salledebain: "الحمامات", carrelage: "البلاط", parquet: "باركيه", marbre: "تجديد الرخام", cloisons: "جدران وأسقف مستعارة", platre: "أعمال الجص", menuiserie: "نجارة", aluminium: "أشغال الألومنيوم", inox: "أشغال الإينوكس", peinture: "دهان وديكور", fenetres: "نوافذ وأبواب" }
+    };
+
+    let currentLang = 'fr';
+    function t(key) { return (content[currentLang] && content[currentLang][key]) || content.fr[key] || key; }
+
+    function applyTranslations(lang) {
+        currentLang = lang;
+        document.querySelectorAll('[data-i18n]').forEach(el => { 
+            if(el.tagName === 'INPUT') el.placeholder = t(el.getAttribute('data-i18n'));
+            else el.innerHTML = t(el.getAttribute('data-i18n')); 
+        });
+        document.documentElement.lang = lang;
+        document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+        localStorage.setItem('reno_lang', lang);
+        renderDynamicMenus(); renderServices(); renderFooterLists(); renderReviews();
+    }
+
+    // --- DATOS DE SERVICIOS ---
+    const servicesData = [
+        { id: "maconnerie", category: "interieure", images: ["https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Maconnerie-Generale.webp","https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Maconnerie-Generale-Maroc.webp"] },
+        { id: "cuisine", category: "interieure", images: ["https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Cuisines-maroc-2.webp","https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Cuisines-maroc-1.webp"] },
+        { id: "salledebain", category: "interieure", images: ["https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Renovation-de-Salle-de-Bains-a-Maroc-1.webp","https://renoexpertsmaroc.com/wp-content/uploads/2026/08/SalleDeBains_Maroc-1-5.webp"] },
+        { id: "carrelage", category: "interieure", images: ["https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Renovation-de-Carrelage-a-Maroc-10-1.webp","https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Renovation-de-Carrelage-a-Maroc-4-2.webp"] },
+        { id: "parquet", category: "interieure", images: ["https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Renovation-de-Parquet-a-Maroc-1.jpg","https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Parquet-flottant.webp"] },
+        { id: "marbre", category: "interieure", images: ["https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Inspirez-vous-renovation-marbre-2.webp","https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Inspirez-vous-renovation-marbre-maroc-4.webp"] },
+        { id: "cloisons", category: "interieure", images: ["https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Cloisons-et-Faux-Plafonds-a-Maroc.webp","https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Cloisons-et-Faux-Plafonds-a-Maroc-3.jpg"] },
+        { id: "platre", category: "interieure", images: ["https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Travaux-Platre-Maroc.webp","https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Travaux-Platre-a-Maroc.webp"] },
+        { id: "menuiserie", category: "autres", images: ["https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Menuiserie-a-Maroc.webp"] },
+        { id: "aluminium", category: "autres", images: ["https://renoexpertsmaroc.com/wp-content/uploads/2026/09/aluminium-tanger.webp","https://renoexpertsmaroc.com/wp-content/uploads/2026/09/fenetre-aluminium-tanger.webp"] },
+        { id: "inox", category: "autres", images: ["https://renoexpertsmaroc.com/wp-content/uploads/2026/09/inox-tanger.jpg"] },
+        { id: "peinture", category: "autres", images: ["https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Peinture-exterieure-a-Maroc-1.jpg","https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Peinture-et-Decoration-a-Casablanca-Maroc-2.jpg"] },
+        { id: "fenetres", category: "autres", images: ["https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Installation-de-Portes-maroc-1.webp","https://renoexpertsmaroc.com/wp-content/uploads/2026/08/portes-interiur-maroc.jpg"] }
+    ];
+
+    const reviewsData = [
+        { id: 1, nameKey: "rev1_name", cityKey: "rev1_city", textKey: "rev1_text" },
+        { id: 2, nameKey: "rev2_name", cityKey: "rev2_city", textKey: "rev2_text" },
+        { id: 3, nameKey: "rev3_name", cityKey: "rev3_city", textKey: "rev3_text" }
+    ];
+
+    function renderDynamicMenus() {
+        ['interieure', 'autres'].forEach(cat => {
+            const container = document.getElementById(`dropdown-${cat}`);
+            if (!container) return;
+            container.innerHTML = '';
+            servicesData.filter(s => s.category === cat).forEach(s => {
+                const a = document.createElement('a');
+                a.href = `#service-${s.id}`;
+                a.textContent = serviceTitles[currentLang][s.id];
+                a.onclick = (e) => { e.preventDefault(); closeMobileMenu(); setTimeout(() => openServiceModal(s.id), 300); };
+                container.appendChild(a);
+            });
+        });
+    }
+
+    function renderServices() {
+        ['interieure', 'autres'].forEach(cat => {
+            const grid = document.getElementById(`grid-${cat}`);
+            if (!grid) return;
+            grid.innerHTML = '';
+            servicesData.filter(s => s.category === cat).forEach(service => {
+                const card = document.createElement('div');
+                card.className = 'service-card';
+                card.setAttribute('tabindex', '0');
+                card.setAttribute('id', `service-${service.id}`);
+                card.onclick = () => openServiceModal(service.id);
+                card.onkeypress = (e) => { if (e.key === 'Enter') openServiceModal(service.id); };
+                const title = serviceTitles[currentLang][service.id];
+                const desc = serviceDesc[currentLang][service.id];
+                card.innerHTML = `
+                    <div class="service-card-img-wrapper">
+                        <img src="${service.images[0]}" alt="${title}" class="service-card-img" loading="lazy" onload="this.classList.add('loaded')">
+                    </div>
+                    <div class="service-card-content">
+                        <h3>${title}</h3>
+                        <p>${desc.substring(0, 130)}...</p>
+                        <span class="read-more">${t('read_more')}</span>
+                    </div>`;
+                grid.appendChild(card);
+            });
+        });
+    }
+
+    function renderFooterLists() {
+        const autresList = document.getElementById('footer-list-autres');
+        const intList = document.getElementById('footer-list-int');
+        if (autresList) autresList.innerHTML = '';
+        if (intList) intList.innerHTML = '';
+        servicesData.filter(s => s.category === 'autres').forEach(s => {
+            const li = document.createElement('li');
+            const a = document.createElement('a');
+            a.href = `#service-${s.id}`;
+            a.textContent = serviceTitles[currentLang][s.id];
+            a.onclick = (e) => { e.preventDefault(); setTimeout(() => openServiceModal(s.id), 300); };
+            li.appendChild(a); autresList.appendChild(li);
+        });
+        servicesData.filter(s => s.category === 'interieure').slice(0, 6).forEach(s => {
+            const li = document.createElement('li');
+            const a = document.createElement('a');
+            a.href = `#service-${s.id}`;
+            a.textContent = serviceTitles[currentLang][s.id];
+            a.onclick = (e) => { e.preventDefault(); setTimeout(() => openServiceModal(s.id), 300); };
+            li.appendChild(a); intList.appendChild(li);
+        });
+    }
+
+    function renderReviews() {
+        const grid = document.getElementById('reviewsGrid');
+        if (!grid) return;
+        grid.innerHTML = '';
+        reviewsData.forEach(rev => {
+            const card = document.createElement('div');
+            card.className = 'review-card';
+            card.innerHTML = `
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">"${t(rev.textKey)}"</p>
+                <div class="review-author">${t(rev.nameKey)}</div>
+                <div class="review-city">📍 ${t(rev.cityKey)}</div>
+            `;
+            grid.appendChild(card);
+        });
+    }
+
+    // --- CHAT LOGIC ---
+    let chatStep = 'welcome';
+    let chatData = { name: '', email: '', phone: '', service: '', city: '', scope: '' };
+    let chatInitialized = false;
+    let currentInputField = '';
+
+    function addMessage(text, type = 'bot') {
+        const chatMessages = document.getElementById('chatMessages');
+        const msg = document.createElement('div');
+        msg.className = `message ${type}`;
+        msg.textContent = text;
+        chatMessages.appendChild(msg);
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+    function showTyping() {
+        const chatMessages = document.getElementById('chatMessages');
+        const typing = document.createElement('div');
+        typing.className = 'typing-indicator'; typing.id = 'typingIndicator';
+        typing.innerHTML = '<span></span><span></span><span></span>';
+        chatMessages.appendChild(typing);
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+    function removeTyping() { const el = document.getElementById('typingIndicator'); if (el) el.remove(); }
+    function showChatButtons(options) {
+        const chatMessages = document.getElementById('chatMessages');
+        const grid = document.createElement('div');
+        grid.className = 'chat-buttons-grid';
+        options.forEach(opt => {
+            const btn = document.createElement('button');
+            btn.className = `chat-btn-option ${opt.fullWidth ? 'full-width' : ''}`;
+            btn.textContent = opt.label;
+            btn.onclick = () => handleChatSelection(opt.value, opt.label);
+            grid.appendChild(btn);
+        });
+        chatMessages.appendChild(grid);
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+    function showTempInput(fieldType) {
+        currentInputField = fieldType;
+        const container = document.getElementById('chatTempInput');
+        const input = document.getElementById('tempInputField');
+        if (fieldType === 'name') { input.type = 'text'; input.placeholder = t('ph_name'); input.setAttribute('autocomplete', 'name'); }
+        else if (fieldType === 'email') { input.type = 'email'; input.placeholder = t('ph_email'); input.setAttribute('autocomplete', 'email'); }
+        else if (fieldType === 'phone') { input.type = 'tel'; input.placeholder = t('ph_phone'); input.setAttribute('autocomplete', 'tel'); }
+        container.style.display = 'flex';
+        setTimeout(() => input.focus(), 100);
+    }
+    function hideTempInput() {
+        document.getElementById('chatTempInput').style.display = 'none';
+        document.getElementById('tempInputField').value = '';
+        currentInputField = '';
+    }
+    function validateEmail(email) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email); }
+    function submitTempInput() {
+        const input = document.getElementById('tempInputField');
+        const value = input.value.trim();
+        if (!value) { showToast(t('toast_error'), 'error'); return; }
+        if (currentInputField === 'email' && !validateEmail(value)) { showToast(t('toast_email_invalid'), 'error'); return; }
+        if (currentInputField === 'name') chatData.name = value;
+        else if (currentInputField === 'email') chatData.email = value;
+        else if (currentInputField === 'phone') chatData.phone = value;
+        addMessage(value, 'user');
+        hideTempInput();
+        showTyping();
+        setTimeout(() => { removeTyping(); advanceChatStep(); }, 600);
+    }
+    document.getElementById('tempInputField').addEventListener('keydown', (e) => { if (e.key === 'Enter') { e.preventDefault(); submitTempInput(); } });
+
+    function handleChatSelection(value, label) {
+        if (chatStep === 'ask_service') chatData.service = label;
+        else if (chatStep === 'ask_city') chatData.city = label;
+        else if (chatStep === 'ask_scope') chatData.scope = label;
+        addMessage(label, 'user');
+        document.querySelectorAll('.chat-buttons-grid').forEach(b => b.remove());
+        showTyping();
+        setTimeout(() => { removeTyping(); advanceChatStep(); }, 600);
+    }
+
+    function advanceChatStep() {
+        if (chatStep === 'welcome') {
+            chatStep = 'ask_service';
+            addMessage(t('chat_welcome') + '\n\n' + t('chat_intro'), 'bot');
+            setTimeout(() => {
+                addMessage(t('chat_ask_service'), 'bot');
+                showChatButtons([
+                    { label: serviceTitles[currentLang].cuisine, value: 'cuisine' },
+                    { label: serviceTitles[currentLang].salledebain, value: 'salledebain' },
+                    { label: serviceTitles[currentLang].peinture, value: 'peinture' },
+                    { label: serviceTitles[currentLang].carrelage, value: 'carrelage' },
+                    { label: serviceTitles[currentLang].menuiserie, value: 'menuiserie' },
+                    { label: serviceTitles[currentLang].maconnerie, value: 'maconnerie' }
+                ]);
+            }, 400);
+        } else if (chatStep === 'ask_service') {
+            chatStep = 'ask_city';
+            addMessage(t('chat_ask_city'), 'bot');
+            setTimeout(() => showChatButtons([
+                { label: "Tanger Centre / طنجة المركز", value: 'tanger_centre' },
+                { label: "Malabata / مالابطا", value: 'malabata' },
+                { label: "Iberia / إيبيريا", value: 'iberia' },
+                { label: "Boukhalef / بوخالف", value: 'boukhalef' },
+                { label: "Bni Makada / بني مكادة", value: 'bni_makada' },
+                { label: "Autre quartier / حي آخر", value: 'autre' }
+            ]), 400);
+        } else if (chatStep === 'ask_city') {
+            chatStep = 'ask_scope';
+            addMessage(t('chat_ask_scope'), 'bot');
+            setTimeout(() => showChatButtons([
+                { label: t('opt_petit'), value: 'petit' }, { label: t('opt_moyen'), value: 'moyen' },
+                { label: t('opt_grand'), value: 'grand' }, { label: t('opt_urgent'), value: 'urgent', fullWidth: true }
+            ]), 400);
+        } else if (chatStep === 'ask_scope') {
+            chatStep = 'ask_name';
+            addMessage(t('chat_contact_intro'), 'bot');
+            setTimeout(() => { addMessage(t('chat_ask_name'), 'bot'); showTempInput('name'); }, 400);
+        } else if (chatStep === 'ask_name') {
+            chatStep = 'ask_email';
+            addMessage(t('chat_ask_email'), 'bot');
+            setTimeout(() => showTempInput('email'), 400);
+        } else if (chatStep === 'ask_email') {
+            chatStep = 'ask_phone';
+            addMessage(t('chat_ask_phone'), 'bot');
+            setTimeout(() => showTempInput('phone'), 400);
+        } else if (chatStep === 'ask_phone') {
+            chatStep = 'summary';
+            const summaryText = `${t('chat_summary_title')}\n\n🔧 ${chatData.service}\n📍 ${chatData.city}\n📏 ${chatData.scope}\n👤 ${chatData.name}\n📧 ${chatData.email}\n📞 ${chatData.phone}`;
+            addMessage(summaryText, 'bot');
+            setTimeout(() => showChatButtons([
+                { label: t('chat_btn_send'), value: 'send', fullWidth: true },
+                { label: t('chat_btn_restart'), value: 'restart', fullWidth: true }
+            ]), 400);
+        }
+    }
+
+    function initChat() {
+        if (chatInitialized) return;
+        chatInitialized = true;
+        document.getElementById('chatMessages').innerHTML = '';
+        chatStep = 'welcome';
+        chatData = { name: '', email: '', phone: '', service: '', city: '', scope: '' };
+        advanceChatStep();
+    }
+    function resetChat() {
+        if (!confirm(t('reset_confirm'))) return;
+        chatInitialized = false;
+        hideTempInput();
+        initChat();
+    }
+    document.getElementById('chatToggle').addEventListener('click', () => {
+        const chatWindow = document.getElementById('chatWindow');
+        const toggle = document.getElementById('chatToggle');
+        const isActive = chatWindow.classList.toggle('active');
+        toggle.setAttribute('aria-expanded', isActive);
+        if (isActive) initChat();
+    });
+    document.addEventListener('click', (e) => {
+        if (e.target.textContent && e.target.textContent.includes(t('chat_btn_send').substring(0, 5))) {
+            const summaryText = `=== DEMANDE DE DEVIS ===\nService: ${chatData.service}\nQuartier: ${chatData.city}\nEnvergure: ${chatData.scope}\nNom: ${chatData.name}\nEmail: ${chatData.email}\nTéléphone: ${chatData.phone}\n\nEnviado desde web Rénovation à Tanger`;
+            const whatsappUrl = `https://wa.me/212670964030?text=${encodeURIComponent(summaryText)}`;
+            try {
+                window.open(whatsappUrl, '_blank');
+                addMessage(t('toast_sent'), 'bot');
+                showToast(t('toast_sent'), 'success');
+            } catch (err) { window.location.href = whatsappUrl; }
+        } else if (e.target.textContent && e.target.textContent.includes(t('chat_btn_restart').substring(0, 5))) {
+            resetChat();
+        }
+    });
+
+    // --- MODALS ---
+    let lastFocusedElement = null;
+    function openServiceModal(serviceId) {
+        const service = servicesData.find(s => s.id === serviceId);
+        if (!service) return;
+        lastFocusedElement = document.activeElement;
+        document.getElementById('modalTitle').textContent = serviceTitles[currentLang][serviceId];
+        document.getElementById('modalDescription').textContent = serviceDesc[currentLang][serviceId];
+        const mainImg = document.getElementById('modalMainImage');
+        mainImg.src = service.images[0];
+        const thumbsContainer = document.getElementById('modalThumbnails');
+        thumbsContainer.innerHTML = '';
+        service.images.forEach((img, index) => {
+            const thumb = document.createElement('img');
+            thumb.src = img; thumb.loading = 'lazy';
+            thumb.onclick = () => {
+                mainImg.src = img;
+                document.querySelectorAll('.modal-thumbnails img').forEach(x => x.classList.remove('active'));
+                thumb.classList.add('active');
+            };
+            if (index === 0) thumb.classList.add('active');
+            thumbsContainer.appendChild(thumb);
+        });
+        document.getElementById('serviceModal').classList.add('active');
+        document.body.style.overflow = 'hidden';
+        setTimeout(() => document.querySelector('#serviceModal .modal-close').focus(), 100);
+    }
+    function closeModal() {
+        document.getElementById('serviceModal').classList.remove('active');
+        document.body.style.overflow = 'auto';
+        if (lastFocusedElement) lastFocusedElement.focus();
+    }
+    function openLegalModal(type) {
+        lastFocusedElement = document.activeElement;
+        document.getElementById('legalTitle').textContent = t(`legal_${type}_title`);
+        document.getElementById('legalText').innerHTML = t(`legal_${type}_text`);
+        document.getElementById('legalModal').classList.add('active');
+        document.body.style.overflow = 'hidden';
+        setTimeout(() => document.querySelector('#legalModal .modal-close').focus(), 100);
+    }
+    function closeLegalModal() {
+        document.getElementById('legalModal').classList.remove('active');
+        document.body.style.overflow = 'auto';
+        if (lastFocusedElement) lastFocusedElement.focus();
+    }
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            if (document.getElementById('serviceModal').classList.contains('active')) closeModal();
+            if (document.getElementById('legalModal').classList.contains('active')) closeLegalModal();
+            if (document.getElementById('chatWindow').classList.contains('active')) {
+                document.getElementById('chatWindow').classList.remove('active');
+                document.getElementById('chatToggle').setAttribute('aria-expanded', 'false');
+            }
+            closeMobileMenu();
+        }
+    });
+    window.addEventListener('click', (event) => {
+        if (event.target.classList.contains('modal')) {
+            if (event.target.id === 'serviceModal') closeModal();
+            if (event.target.id === 'legalModal') closeLegalModal();
+        }
+    });
+
+    // --- MOBILE MENU ---
+    function toggleMobileDropdown(event, element) {
+        if (window.innerWidth <= 968) {
+            event.preventDefault();
+            const navItem = element.closest('.nav-item');
+            const isOpen = navItem.classList.contains('open');
+            document.querySelectorAll('.nav-item.open').forEach(item => { if (item !== navItem) item.classList.remove('open'); });
+            navItem.classList.toggle('open', !isOpen);
+        }
+    }
+    document.getElementById('mobileMenuBtn').addEventListener('click', () => {
+        document.getElementById('navMenu').classList.add('active');
+        document.getElementById('menuOverlay').classList.add('active');
+        document.getElementById('mobileMenuBtn').setAttribute('aria-expanded', 'true');
+        document.body.style.overflow = 'hidden';
+    });
+    function closeMobileMenu() {
+        document.getElementById('navMenu').classList.remove('active');
+        document.getElementById('menuOverlay').classList.remove('active');
+        document.getElementById('mobileMenuBtn').setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+        document.querySelectorAll('.nav-item.open').forEach(item => item.classList.remove('open'));
+    }
+
+    // --- LANG SELECTOR ---
+    function setLang(lang) {
+        const flagMap = { fr: '🇫', es: '🇪🇸', ar: '🇲🇦' };
+        const flag = flagMap[lang] || '🇫';
+        ['currentFlag', 'mobileCurrentFlag'].forEach(id => { const el = document.getElementById(id); if (el) el.textContent = flag; });
+        ['currentLang', 'mobileCurrentLang'].forEach(id => { const el = document.getElementById(id); if (el) el.textContent = lang.toUpperCase(); });
+        document.querySelectorAll('.lang-option').forEach(o => o.classList.toggle('active', o.getAttribute('data-lang') === lang));
+        applyTranslations(lang);
+    }
+    const langBtn = document.getElementById('langBtn');
+    if (langBtn) langBtn.addEventListener('click', (e) => { e.stopPropagation(); document.getElementById('langDropdown').classList.toggle('active'); });
+    const mobileLangBtn = document.getElementById('mobileLangBtn');
+    if (mobileLangBtn) mobileLangBtn.addEventListener('click', (e) => { e.stopPropagation(); document.getElementById('mobileLangDropdown').classList.toggle('active'); });
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.lang-selector')) { const d = document.getElementById('langDropdown'); if (d) d.classList.remove('active'); }
+        if (!e.target.closest('.mobile-lang-selector')) { const d = document.getElementById('mobileLangDropdown'); if (d) d.classList.remove('active'); }
+    });
+    document.querySelectorAll('.lang-option').forEach(option => {
+        option.addEventListener('click', (e) => {
+            e.stopPropagation();
+            setLang(option.getAttribute('data-lang'));
+            const d1 = document.getElementById('langDropdown'); if (d1) d1.classList.remove('active');
+            const d2 = document.getElementById('mobileLangDropdown'); if (d2) d2.classList.remove('active');
+        });
+    });
+
+    // --- UTILS ---
+    function showToast(message, type = 'success') {
+        const toast = document.getElementById('toast');
+        toast.textContent = message;
+        toast.className = 'toast show' + (type === 'error' ? ' error' : '');
+        setTimeout(() => toast.classList.remove('show'), 3000);
+    }
+    function updateOnlineStatus() {
+        const banner = document.getElementById('offlineBanner');
+        if (!navigator.onLine) banner.classList.add('show'); else banner.classList.remove('show');
+    }
+    window.addEventListener('online', updateOnlineStatus);
+    window.addEventListener('offline', updateOnlineStatus);
+
+    // --- PWA & SERVICE WORKER ---
+    let deferredPrompt;
+    const pwaBanner = document.getElementById('pwaBanner');
+    const pwaInstallBtn = document.getElementById('pwaInstallBtn');
+
+    window.addEventListener('beforeinstallprompt', (e) => {
+        e.preventDefault();
+        deferredPrompt = e;
+        if(!localStorage.getItem('pwa_dismissed')) {
+            pwaBanner.classList.add('show');
+        }
+    });
+
+    pwaInstallBtn.addEventListener('click', async () => {
+        pwaBanner.classList.remove('show');
+        if (deferredPrompt) {
+            deferredPrompt.prompt();
+            const { outcome } = await deferredPrompt.userChoice;
+            if (outcome === 'accepted') {
+                console.log('PWA instalada');
+            }
+            deferredPrompt = null;
+        }
+    });
+
+    document.querySelector('.pwa-btn-close').addEventListener('click', () => {
+        localStorage.setItem('pwa_dismissed', Date.now());
+    });
+
+    if(localStorage.getItem('pwa_dismissed')) {
+        const dismissedTime = parseInt(localStorage.getItem('pwa_dismissed'));
+        if(Date.now() - dismissedTime > 86400000) {
+            localStorage.removeItem('pwa_dismissed');
+        }
+    }
+
+    if ('serviceWorker' in navigator && window.location.protocol.startsWith('http')) {
+        const swCode = `
+            const CACHE_NAME = 'reno-tanger-v28';
+            self.addEventListener('install', e => e.waitUntil(caches.open(CACHE_NAME).then(c => c.addAll(['./', './index.html'])).then(() => self.skipWaiting())));
+            self.addEventListener('activate', e => e.waitUntil(caches.keys().then(names => Promise.all(names.filter(n => n !== CACHE_NAME).map(n => caches.delete(n)))).then(() => self.clients.claim())));
+            self.addEventListener('fetch', e => {
+                if (e.request.mode === 'navigate') { e.respondWith(fetch(e.request).catch(() => caches.match('./index.html'))); return; }
+                e.respondWith(caches.match(e.request).then(r => r || fetch(e.request).then(res => { if(res && res.status===200){ const c=res.clone(); caches.open(CACHE_NAME).then(cache=>cache.put(e.request, c)); } return res; }).catch(()=>null)));
+            });
+        `;
+        navigator.serviceWorker.register(URL.createObjectURL(new Blob([swCode], { type: 'application/javascript' }))).catch(console.log);
+    }
+
+    // --- INIT ---
+    document.addEventListener('DOMContentLoaded', () => {
+        const savedLang = localStorage.getItem('reno_lang');
+        if (savedLang && content[savedLang]) setLang(savedLang);
+        else { renderDynamicMenus(); renderServices(); renderFooterLists(); renderReviews(); }
+        updateOnlineStatus();
+    });
+    </script>
+</body>
+</html>
