@@ -365,7 +365,7 @@
                         <span>▼</span>
                     </button>
                     <div class="lang-dropdown" id="mobileLangDropdown" role="menu">
-                        <div class="lang-option active" data-lang="fr" role="menuitem">🇫 Français</div>
+                        <div class="lang-option active" data-lang="fr" role="menuitem">🇫🇷 Français</div>
                         <div class="lang-option" data-lang="es" role="menuitem">🇪 Español</div>
                         <div class="lang-option" data-lang="ar" role="menuitem">🇲🇦 العربية</div>
                     </div>
@@ -410,7 +410,7 @@
                 </button>
                 <div class="lang-dropdown" id="langDropdown" role="menu">
                     <div class="lang-option active" data-lang="fr" role="menuitem">🇫🇷 Français</div>
-                    <div class="lang-option" data-lang="es" role="menuitem">🇪 Español</div>
+                    <div class="lang-option" data-lang="es" role="menuitem">🇪🇸 Español</div>
                     <div class="lang-option" data-lang="ar" role="menuitem">🇲🇦 العربية</div>
                 </div>
             </div>
@@ -481,7 +481,7 @@
             <p class="why-us-subtitle" data-i18n="why_subtitle">Les garanties qui font notre différence</p>
             <div class="why-us-grid">
                 <div class="why-us-card">
-                    <div class="why-us-icon">👷‍♂️</div>
+                    <div class="why-us-icon">👷‍️</div>
                     <h4 data-i18n="why_c1_title">Artisans Qualifiés</h4>
                     <p data-i18n="why_c1_desc">Équipe d'artisans certifiés avec plus de 10 ans d'expérience.</p>
                 </div>
@@ -572,7 +572,8 @@
                     <h4 data-i18n="footer_contact">Contact</h4>
                     <ul class="footer-contact-list">
                         <li><span>📞</span><a href="tel:+212670964030">+212 670 964 030</a></li>
-                        <li><span>💬</span><a href="https://wa.seo-local.click/es/whatsapp-business-directory/02f99a39-9baf-48d9-ae2c-6d0e3d32510d" target="_blank" rel="noopener">WhatsApp Devis</a></li>
+                        <!-- ENLACE WHATSAPP ACTUALIZADO AL NUMERO DIRECTO -->
+                        <li><span>💬</span><a href="https://wa.me/212670964030" target="_blank" rel="noopener">WhatsApp Devis</a></li>
                         <li><span>📍</span><span data-i18n="footer_location">Tanger</span></li>
                         <li><span>🕐</span><span data-i18n="footer_hours">Lun-Sam: 8h-18h</span></li>
                     </ul>
@@ -1314,7 +1315,7 @@
 
     if ('serviceWorker' in navigator && window.location.protocol.startsWith('http')) {
         const swCode = `
-            const CACHE_NAME = 'reno-tanger-v30';
+            const CACHE_NAME = 'reno-tanger-v31';
             self.addEventListener('install', e => e.waitUntil(caches.open(CACHE_NAME).then(c => c.addAll(['./', './index.html'])).then(() => self.skipWaiting())));
             self.addEventListener('activate', e => e.waitUntil(caches.keys().then(names => Promise.all(names.filter(n => n !== CACHE_NAME).map(n => caches.delete(n)))).then(() => self.clients.claim())));
             self.addEventListener('fetch', e => {
