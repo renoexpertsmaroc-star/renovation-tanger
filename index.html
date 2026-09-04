@@ -270,30 +270,32 @@
             .lang-selector { display: none; }
             .nav-menu { position: fixed; top: 0; right: -100%; width: 85%; max-width: 360px; height: 100vh; background: white; flex-direction: column; padding: 0; transition: right 0.35s cubic-bezier(0.4, 0, 0.2, 1); overflow-y: auto; align-items: stretch; z-index: 1100; gap: 0; box-shadow: -4px 0 20px rgba(0,0,0,0.15); }
             .nav-menu.active { right: 0; }
-            .mobile-menu-header { display: flex; justify-content: space-between; align-items: center; padding: 1rem 1.5rem; border-bottom: 1px solid #e2e8f0; background: var(--light); }
-            .mobile-menu-header h3 { color: var(--primary); font-size: 1.1rem; font-weight: 700; }
-            .mobile-menu-close { background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--dark); padding: 0.25rem 0.5rem; line-height: 1; }
-            .mobile-menu-body { padding: 0.5rem 0; flex: 1; }
+            
+            /* REORDENAMIENTO MENU MOVIL: IDIOMAS ARRIBA */
+            .mobile-menu-header { display: flex; justify-content: space-between; align-items: center; padding: 1rem 1.5rem; border-bottom: 1px solid #e2e8f0; background: var(--light); order: 1; }
+            .mobile-lang-selector { display: block; padding: 1rem 1.5rem; border-bottom: 1px solid #e2e8f0; background: white; order: 2; }
+            .mobile-lang-selector .lang-btn { width: 100%; justify-content: space-between; }
+            .mobile-lang-selector .lang-dropdown { position: static; width: 100%; margin-top: 0.5rem; box-shadow: none; border: 1px solid #e2e8f0; }
+            
+            .mobile-menu-body { padding: 0.5rem 0; flex: 1; order: 3; }
             .nav-links { flex-direction: column; width: 100%; gap: 0; align-items: stretch; }
             .nav-item { width: 100%; border-bottom: 1px solid #f1f5f9; }
-            .nav-anchor { width: 100%; justify-content: space-between; padding: 1rem 1.5rem; font-size: 1rem; }
+            /* TEXTO MENU MOVIL AUMENTADO */
+            .nav-anchor { width: 100%; justify-content: space-between; padding: 1rem 1.5rem; font-size: 1.1rem; }
             .nav-anchor::after { display: none; }
             .dropdown-menu { position: static; opacity: 1; visibility: visible; transform: none; box-shadow: none; border: none; border-radius: 0; max-height: 0; overflow: hidden; padding: 0; transition: max-height 0.35s ease; background: #f8fafc; min-width: auto; }
             .nav-item.open > .dropdown-menu { max-height: 500px; padding: 0.5rem 0; }
             .nav-item.open .dropdown-arrow { transform: rotate(180deg); }
-            .dropdown-menu a { padding: 0.85rem 2.5rem; font-size: 0.92rem; }
-            .mobile-menu-actions { display: flex; flex-direction: column; gap: 0.75rem; padding: 1rem 1.5rem; border-top: 1px solid #e2e8f0; background: var(--light); }
-            .mobile-menu-actions .btn { width: 100%; justify-content: center; padding: 0.9rem 1.3rem; }
-            .mobile-lang-selector { display: block; padding: 1rem 1.5rem; border-top: 1px solid #e2e8f0; }
-            .mobile-lang-selector .lang-btn { width: 100%; justify-content: space-between; }
-            .mobile-lang-selector .lang-dropdown { position: static; width: 100%; margin-top: 0.5rem; box-shadow: none; border: 1px solid #e2e8f0; }
+            .dropdown-menu a { padding: 0.85rem 2.5rem; font-size: 0.95rem; }
             
-            .hero { padding: 8rem 1.5rem; min-height: 80vh; }
-            /* TITULO HERO MOVIL AUMENTADO */
-            .hero-content h1 { font-size: clamp(2.2rem, 8vw, 3rem); }
-            .hero-content p { font-size: clamp(1rem, 4vw, 1.15rem); }
+            .mobile-menu-actions { display: flex; flex-direction: column; gap: 0.75rem; padding: 1rem 1.5rem; border-top: 1px solid #e2e8f0; background: var(--light); order: 4; }
+            .mobile-menu-actions .btn { width: 100%; justify-content: center; padding: 0.9rem 1.3rem; }
+            
+            .hero { padding: 6rem 1.5rem; min-height: 80vh; }
+            /* TITULO HERO AJUSTADO */
+            .hero-content h1 { font-size: clamp(2rem, 7vw, 2.5rem); margin-bottom: 1rem; }
+            .hero-content p { font-size: clamp(1rem, 4vw, 1.15rem); margin-bottom: 2rem; }
             .hero-buttons { flex-direction: column; width: 100%; align-items: center; }
-            /* BOTONES HERO CENTRADOS */
             .hero-buttons .btn { width: 100%; font-size: 16px; justify-content: center; text-align: center; display: flex; }
             
             .experts-grid { grid-template-columns: 1fr; gap: 3rem; }
@@ -310,6 +312,9 @@
             /* TITULOS SERVICIOS MOVIL AUMENTADOS */
             .service-card h3 { font-size: 1.4rem; font-weight: 800; }
 
+            /* PESO DE TITULOS DE SECCION EN MOVIL */
+            .section-title, .experts-content h2, .cta-title, .why-us-section .section-title { font-weight: 800; }
+
             .footer-main { grid-template-columns: 1fr; gap: 2rem; }
             .footer-main > .footer-col:nth-child(4) { order: -1; }
             .footer-bottom { flex-direction: column; text-align: center; }
@@ -322,7 +327,6 @@
         }
         @media (max-width: 480px) {
             .header-container { height: 70px; }
-            /* LOGO MOVIL AUMENTADO */
             .logo-text { font-size: 1.35rem; }
         }
         *:focus-visible { outline: 3px solid var(--secondary); outline-offset: 2px; }
@@ -352,6 +356,21 @@
                     <h3 data-i18n="menu_title">Menu</h3>
                     <button class="mobile-menu-close" onclick="closeMobileMenu()" aria-label="Fermer">✕</button>
                 </div>
+                
+                <!-- IDIOMAS MOVIDO ARRIBA EN MOVIL -->
+                <div class="mobile-lang-selector">
+                    <button class="lang-btn" id="mobileLangBtn" aria-haspopup="true" aria-expanded="false">
+                        <span id="mobileCurrentFlag">🇫🇷</span>
+                        <span id="mobileCurrentLang">FR</span>
+                        <span>▼</span>
+                    </button>
+                    <div class="lang-dropdown" id="mobileLangDropdown" role="menu">
+                        <div class="lang-option active" data-lang="fr" role="menuitem">🇫 Français</div>
+                        <div class="lang-option" data-lang="es" role="menuitem">🇪 Español</div>
+                        <div class="lang-option" data-lang="ar" role="menuitem">🇲🇦 العربية</div>
+                    </div>
+                </div>
+
                 <div class="mobile-menu-body">
                     <ul class="nav-links">
                         <li class="nav-item" data-category="interieure">
@@ -366,7 +385,6 @@
                             </a>
                             <div class="dropdown-menu" id="dropdown-autres"></div>
                         </li>
-                        <!-- ENLACE CONTACT SOLO EN MOVIL -->
                         <li class="nav-item">
                             <a class="nav-anchor" href="#contact" onclick="closeMobileMenu()">
                                 <span data-i18n="nav_contact">Contact</span>
@@ -382,18 +400,6 @@
                         <span data-i18n="btn_call">Appeler</span>
                     </a>
                 </div>
-                <div class="mobile-lang-selector">
-                    <button class="lang-btn" id="mobileLangBtn" aria-haspopup="true" aria-expanded="false">
-                        <span id="mobileCurrentFlag">🇫🇷</span>
-                        <span id="mobileCurrentLang">FR</span>
-                        <span>▼</span>
-                    </button>
-                    <div class="lang-dropdown" id="mobileLangDropdown" role="menu">
-                        <div class="lang-option active" data-lang="fr" role="menuitem">🇫🇷 Français</div>
-                        <div class="lang-option" data-lang="es" role="menuitem">🇪🇸 Español</div>
-                        <div class="lang-option" data-lang="ar" role="menuitem">🇲🇦 العربية</div>
-                    </div>
-                </div>
             </nav>
 
             <div class="lang-selector">
@@ -404,7 +410,7 @@
                 </button>
                 <div class="lang-dropdown" id="langDropdown" role="menu">
                     <div class="lang-option active" data-lang="fr" role="menuitem">🇫🇷 Français</div>
-                    <div class="lang-option" data-lang="es" role="menuitem">🇪🇸 Español</div>
+                    <div class="lang-option" data-lang="es" role="menuitem">🇪 Español</div>
                     <div class="lang-option" data-lang="ar" role="menuitem">🇲🇦 العربية</div>
                 </div>
             </div>
@@ -475,7 +481,7 @@
             <p class="why-us-subtitle" data-i18n="why_subtitle">Les garanties qui font notre différence</p>
             <div class="why-us-grid">
                 <div class="why-us-card">
-                    <div class="why-us-icon">👷‍️</div>
+                    <div class="why-us-icon">👷‍♂️</div>
                     <h4 data-i18n="why_c1_title">Artisans Qualifiés</h4>
                     <p data-i18n="why_c1_desc">Équipe d'artisans certifiés avec plus de 10 ans d'expérience.</p>
                 </div>
@@ -1232,7 +1238,6 @@
 
     // --- LANG SELECTOR ---
     function setLang(lang) {
-        // BANDERAS CORREGIDAS PARA ESCRITORIO Y MOVIL
         const flagMap = { fr: '🇫🇷', es: '🇪🇸', ar: '🇲🇦' };
         const flag = flagMap[lang] || '🇫🇷';
         ['currentFlag', 'mobileCurrentFlag'].forEach(id => { const el = document.getElementById(id); if (el) el.textContent = flag; });
@@ -1309,7 +1314,7 @@
 
     if ('serviceWorker' in navigator && window.location.protocol.startsWith('http')) {
         const swCode = `
-            const CACHE_NAME = 'reno-tanger-v29';
+            const CACHE_NAME = 'reno-tanger-v30';
             self.addEventListener('install', e => e.waitUntil(caches.open(CACHE_NAME).then(c => c.addAll(['./', './index.html'])).then(() => self.skipWaiting())));
             self.addEventListener('activate', e => e.waitUntil(caches.keys().then(names => Promise.all(names.filter(n => n !== CACHE_NAME).map(n => caches.delete(n)))).then(() => self.clients.claim())));
             self.addEventListener('fetch', e => {
