@@ -602,7 +602,7 @@
                 <div class="modal-info">
                     <h2 id="modalTitle"></h2>
                     <p id="modalDescription"></p>
-                    <a href="https://wa.seo-local.click/es/whatsapp-business-directory/02f99a39-9baf-48d9-ae2c-6d0e3d32510d" target="_blank" rel="noopener" class="btn btn-whatsapp btn-large" data-i18n="modal_cta">Demander un devis gratuit</a>
+                    <a href="https://wa.me/212670964030" target="_blank" rel="noopener" class="btn btn-whatsapp btn-large" data-i18n="modal_cta">Demander un devis gratuit</a>
                 </div>
             </div>
         </div>
@@ -875,21 +875,154 @@
         renderDynamicMenus(); renderServices(); renderFooterLists(); renderReviews();
     }
 
-    // --- DATOS DE SERVICIOS ---
+    // --- DATOS DE SERVICIOS (IMAGENES ACTUALIZADAS SEGUN SOLICITUD) ---
     const servicesData = [
-        { id: "maconnerie", category: "interieure", images: ["https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Maconnerie-Generale.webp","https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Maconnerie-Generale-Maroc.webp"] },
-        { id: "cuisine", category: "interieure", images: ["https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Cuisines-maroc-2.webp","https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Cuisines-maroc-1.webp"] },
-        { id: "salledebain", category: "interieure", images: ["https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Renovation-de-Salle-de-Bains-a-Maroc-1.webp","https://renoexpertsmaroc.com/wp-content/uploads/2026/08/SalleDeBains_Maroc-1-5.webp"] },
-        { id: "carrelage", category: "interieure", images: ["https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Renovation-de-Carrelage-a-Maroc-10-1.webp","https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Renovation-de-Carrelage-a-Maroc-4-2.webp"] },
-        { id: "parquet", category: "interieure", images: ["https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Renovation-de-Parquet-a-Maroc-1.jpg","https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Parquet-flottant.webp"] },
-        { id: "marbre", category: "interieure", images: ["https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Inspirez-vous-renovation-marbre-2.webp","https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Inspirez-vous-renovation-marbre-maroc-4.webp"] },
-        { id: "cloisons", category: "interieure", images: ["https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Cloisons-et-Faux-Plafonds-a-Maroc.webp","https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Cloisons-et-Faux-Plafonds-a-Maroc-3.jpg"] },
-        { id: "platre", category: "interieure", images: ["https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Travaux-Platre-Maroc.webp","https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Travaux-Platre-a-Maroc.webp"] },
-        { id: "menuiserie", category: "autres", images: ["https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Menuiserie-a-Maroc.webp"] },
-        { id: "aluminium", category: "autres", images: ["https://renoexpertsmaroc.com/wp-content/uploads/2026/09/aluminium-tanger.webp","https://renoexpertsmaroc.com/wp-content/uploads/2026/09/fenetre-aluminium-tanger.webp"] },
-        { id: "inox", category: "autres", images: ["https://renoexpertsmaroc.com/wp-content/uploads/2026/09/inox-tanger.jpg"] },
-        { id: "peinture", category: "autres", images: ["https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Peinture-exterieure-a-Maroc-1.jpg","https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Peinture-et-Decoration-a-Casablanca-Maroc-2.jpg"] },
-        { id: "fenetres", category: "autres", images: ["https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Installation-de-Portes-maroc-1.webp","https://renoexpertsmaroc.com/wp-content/uploads/2026/08/portes-interiur-maroc.jpg"] }
+        { 
+            id: "maconnerie", category: "interieure", 
+            images: [
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Maconnerie-Generale.webp",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Maconnerie-Generale-Maroc.webp",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/09/Travaux-de-maconnerie-generale-1920x1020-10-1.jpg",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/09/Travaux-de-maconnerie-generale-1920x1020-8-1.jpg",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/09/Travaux-de-maconnerie-generale-1920x1020-7-1.jpg",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/09/Travaux-de-maconnerie-generale-1920x1020-6-1.jpg",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/09/Travaux-de-maconnerie-generale-1920x1020-4-1.jpg",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/09/Travaux-de-maconnerie-generale-1920x1020-1-1.jpg"
+            ] 
+        },
+        { 
+            id: "cuisine", category: "interieure", 
+            images: [
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Cuisines-maroc-2.webp",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Cuisines-maroc-1.webp",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Cuisines-maroc-5.webp",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Cuisines-maroc-4.webp",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Cuisines-maroc-3.webp",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Renovation-de-Cuisines-a-Maroc.webp",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Cuisines-a-Maroc.webp",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2025/05/Cuisines-Namur-7.webp",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2025/05/Cuisines-Namur-6.webp"
+            ] 
+        },
+        { 
+            id: "salledebain", category: "interieure", 
+            images: [
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Renovation-de-Salle-de-Bains-a-Maroc-1.webp",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/SalleDeBains_Maroc-1-5.webp",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/SalleDeBains_Maroc-1-4.webp",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/SalleDeBains_Maroc-1-3.webp",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/SalleDeBains_Maroc-1-2.webp",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/SalleDeBains_Maroc-1-6.webp",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/SalleDeBains_Maroc-1-1.webp",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Renovation-de-Salle-de-Bains-a-Maroc1.webp",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Renovation-de-Salle-de-Bains-a-Maroc.webp",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Renovation-Salle-de-Bains-Maroc.webp"
+            ] 
+        },
+        { 
+            id: "carrelage", category: "interieure", 
+            images: [
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Renovation-de-Carrelage-a-Maroc-10-1.webp",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Renovation-de-Carrelage-a-Maroc-4-2.webp",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Renovation-de-Carrelage-a-Maroc-4-1.webp",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Renovation-de-Carrelage-a-Maroc-3.webp",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Renovation-de-Carrelage-a-Maroc-2.webp",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Renovation-de-Carrelage-a-Maroc-1.webp",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Renovation-de-Carrelage-a-Maroc-13.webp"
+            ] 
+        },
+        { 
+            id: "parquet", category: "interieure", 
+            images: [
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Renovation-de-Parquet-a-Maroc-1.jpg",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Parquet-flottant.webp",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Reparation-de-Parquet-Ancien.webp",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Pose-de-parquet-neuf.webp",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Installation-de-parquet-a-Maroc.webp",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/renovation-parquet-maroc.webp"
+            ] 
+        },
+        { 
+            id: "marbre", category: "interieure", 
+            images: [
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Inspirez-vous-renovation-marbre-2.webp",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Inspirez-vous-renovation-marbre-maroc-4.webp",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Inspirez-vous-renovation-marbre-maroc-3.webp",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Inspirez-vous-renovation-marbre-maroc-2.webp",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Inspirez-vous-renovation-marbre-maroc-1.webp",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Inspirez-vous-renovation-marbre-1.webp"
+            ] 
+        },
+        { 
+            id: "cloisons", category: "interieure", 
+            images: [
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Cloisons-et-Faux-Plafonds-a-Maroc.webp",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Cloisons-et-Faux-Plafonds-a-Maroc-3.jpg",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Cloisons-et-Faux-Plafonds-a-Maroc-2.jpg",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Cloisons-et-Faux-Plafonds-a-Maroc-1.jpg",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Cloisons-et-Faux-Plafonds-a-Maroc-6.jpg",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Cloisons-et-Faux-Plafonds-a-Maroc-5.jpg"
+            ] 
+        },
+        { 
+            id: "platre", category: "interieure", 
+            images: [
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Travaux-Platre-Maroc.webp",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Travaux-Platre-a-Maroc.webp",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2025/06/renovation-platre.jpg"
+            ] 
+        },
+        { 
+            id: "menuiserie", category: "autres", 
+            images: [
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Inspirez-vous-menuiserie-maroc-3-1.jpg",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Reparation-de-menuiserie-maroc.webp",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Inspirez-vous-menuiserie-maroc-6.jpg",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Inspirez-vous-menuiserie-maroc-5.jpg",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Inspirez-vous-menuiserie-maroc-4.jpg",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Inspirez-vous-menuiserie-maroc-3.jpg",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Inspirez-vous-menuiserie-maroc-2.jpg",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Inspirez-vous-menuiserie-maroc-1.jpg",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Inspirez-vous-menuiserie-maroc.jpg",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Menuiserie-a-Maroc.webp",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2025/06/Inspirez-vous-menuiserie-Namur-4.jpg"
+            ] 
+        },
+        { 
+            id: "aluminium", category: "autres", 
+            images: [
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/09/aluminium-tanger.webp",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/09/fenetre-aluminium-tanger.webp"
+            ] 
+        },
+        { 
+            id: "inox", category: "autres", 
+            images: [
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/09/inox-tanger.jpg"
+            ] 
+        },
+        { 
+            id: "peinture", category: "autres", 
+            images: [
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Peinture-exterieure-a-Maroc-1.jpg",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Peinture-et-Decoration-a-Casablanca-Maroc-2.jpg",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Peinture-et-Decoration-a-Casablanca-Maroc-1.jpg",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Peinture-et-Decoration-a-Casablanca-Maroc-4.jpg",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Peinture-et-Decoration-a-Casablanca-Maroc-3.jpg",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Peinture-et-Decoration.jpg"
+            ] 
+        },
+        { 
+            id: "fenetres", category: "autres", 
+            images: [
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Installation-de-Portes-maroc-1.webp",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/portes-interiur-maroc.jpg",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/portes-maroc.webp",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2025/06/Portes-Interieures-et-Exterieures-1.jpg",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Installation-de-Fenetres-maroc-1.webp",
+                "https://renoexpertsmaroc.com/wp-content/uploads/2026/08/Fenetres-Isolantes-maroc.jpg"
+            ] 
+        }
     ];
 
     const reviewsData = [
@@ -1315,7 +1448,7 @@
 
     if ('serviceWorker' in navigator && window.location.protocol.startsWith('http')) {
         const swCode = `
-            const CACHE_NAME = 'reno-tanger-v31';
+            const CACHE_NAME = 'reno-tanger-v32';
             self.addEventListener('install', e => e.waitUntil(caches.open(CACHE_NAME).then(c => c.addAll(['./', './index.html'])).then(() => self.skipWaiting())));
             self.addEventListener('activate', e => e.waitUntil(caches.keys().then(names => Promise.all(names.filter(n => n !== CACHE_NAME).map(n => caches.delete(n)))).then(() => self.clients.claim())));
             self.addEventListener('fetch', e => {
