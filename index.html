@@ -90,7 +90,7 @@
         .lang-option.active { background: var(--light); font-weight: 600; color: var(--primary); }
 
         .header-actions { display: flex; gap: 0.75rem; align-items: center; }
-        .btn { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.7rem 1.3rem; border-radius: 8px; text-decoration: none; font-weight: 600; border: none; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s; font-size: 0.9rem; white-space: nowrap; }
+        .btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.7rem 1.3rem; border-radius: 8px; text-decoration: none; font-weight: 600; border: none; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s; font-size: 0.9rem; white-space: nowrap; text-align: center; }
         .btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
         .btn:active { transform: translateY(0); }
         .btn-whatsapp { background: #25D366; color: white; }
@@ -289,10 +289,12 @@
             .mobile-lang-selector .lang-dropdown { position: static; width: 100%; margin-top: 0.5rem; box-shadow: none; border: 1px solid #e2e8f0; }
             
             .hero { padding: 8rem 1.5rem; min-height: 80vh; }
-            .hero-content h1 { font-size: clamp(1.75rem, 6.5vw, 2.25rem); }
+            /* TITULO HERO MOVIL AUMENTADO */
+            .hero-content h1 { font-size: clamp(2.2rem, 8vw, 3rem); }
             .hero-content p { font-size: clamp(1rem, 4vw, 1.15rem); }
-            .hero-buttons { flex-direction: column; width: 100%; }
-            .hero-buttons .btn { width: 100%; font-size: 16px; }
+            .hero-buttons { flex-direction: column; width: 100%; align-items: center; }
+            /* BOTONES HERO CENTRADOS */
+            .hero-buttons .btn { width: 100%; font-size: 16px; justify-content: center; text-align: center; display: flex; }
             
             .experts-grid { grid-template-columns: 1fr; gap: 3rem; }
             .experts-img-sub { right: 10px; bottom: -20px; width: 50%; }
@@ -304,6 +306,10 @@
             .modal-main-img-wrapper { height: 250px; }
             .modal-info { padding: 1.5rem; }
             .services-grid { grid-template-columns: 1fr; }
+            
+            /* TITULOS SERVICIOS MOVIL AUMENTADOS */
+            .service-card h3 { font-size: 1.4rem; font-weight: 800; }
+
             .footer-main { grid-template-columns: 1fr; gap: 2rem; }
             .footer-main > .footer-col:nth-child(4) { order: -1; }
             .footer-bottom { flex-direction: column; text-align: center; }
@@ -316,7 +322,8 @@
         }
         @media (max-width: 480px) {
             .header-container { height: 70px; }
-            .logo-text { font-size: 1.1rem; }
+            /* LOGO MOVIL AUMENTADO */
+            .logo-text { font-size: 1.35rem; }
         }
         *:focus-visible { outline: 3px solid var(--secondary); outline-offset: 2px; }
         @media print { .chat-widget, .header, .footer, .pwa-banner { display: none; } }
@@ -382,8 +389,8 @@
                         <span>▼</span>
                     </button>
                     <div class="lang-dropdown" id="mobileLangDropdown" role="menu">
-                        <div class="lang-option active" data-lang="fr" role="menuitem">🇫 Français</div>
-                        <div class="lang-option" data-lang="es" role="menuitem">🇪 Español</div>
+                        <div class="lang-option active" data-lang="fr" role="menuitem">🇫🇷 Français</div>
+                        <div class="lang-option" data-lang="es" role="menuitem">🇪🇸 Español</div>
                         <div class="lang-option" data-lang="ar" role="menuitem">🇲🇦 العربية</div>
                     </div>
                 </div>
@@ -397,13 +404,12 @@
                 </button>
                 <div class="lang-dropdown" id="langDropdown" role="menu">
                     <div class="lang-option active" data-lang="fr" role="menuitem">🇫🇷 Français</div>
-                    <div class="lang-option" data-lang="es" role="menuitem">🇪 Español</div>
+                    <div class="lang-option" data-lang="es" role="menuitem">🇪🇸 Español</div>
                     <div class="lang-option" data-lang="ar" role="menuitem">🇲🇦 العربية</div>
                 </div>
             </div>
 
             <div class="header-actions">
-                <!-- BOTON CONTACT ELIMINADO AQUI -->
                 <a href="https://wa.seo-local.click/es/whatsapp-business-directory/02f99a39-9baf-48d9-ae2c-6d0e3d32510d" target="_blank" rel="noopener" class="btn btn-whatsapp">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
                     <span data-i18n="btn_devis">Devis Gratuit</span>
@@ -469,7 +475,7 @@
             <p class="why-us-subtitle" data-i18n="why_subtitle">Les garanties qui font notre différence</p>
             <div class="why-us-grid">
                 <div class="why-us-card">
-                    <div class="why-us-icon">👷‍♂️</div>
+                    <div class="why-us-icon">👷‍️</div>
                     <h4 data-i18n="why_c1_title">Artisans Qualifiés</h4>
                     <p data-i18n="why_c1_desc">Équipe d'artisans certifiés avec plus de 10 ans d'expérience.</p>
                 </div>
@@ -1226,8 +1232,9 @@
 
     // --- LANG SELECTOR ---
     function setLang(lang) {
-        const flagMap = { fr: '🇫', es: '🇪🇸', ar: '🇲🇦' };
-        const flag = flagMap[lang] || '🇫';
+        // BANDERAS CORREGIDAS PARA ESCRITORIO Y MOVIL
+        const flagMap = { fr: '🇫🇷', es: '🇪🇸', ar: '🇲🇦' };
+        const flag = flagMap[lang] || '🇫🇷';
         ['currentFlag', 'mobileCurrentFlag'].forEach(id => { const el = document.getElementById(id); if (el) el.textContent = flag; });
         ['currentLang', 'mobileCurrentLang'].forEach(id => { const el = document.getElementById(id); if (el) el.textContent = lang.toUpperCase(); });
         document.querySelectorAll('.lang-option').forEach(o => o.classList.toggle('active', o.getAttribute('data-lang') === lang));
@@ -1302,7 +1309,7 @@
 
     if ('serviceWorker' in navigator && window.location.protocol.startsWith('http')) {
         const swCode = `
-            const CACHE_NAME = 'reno-tanger-v28';
+            const CACHE_NAME = 'reno-tanger-v29';
             self.addEventListener('install', e => e.waitUntil(caches.open(CACHE_NAME).then(c => c.addAll(['./', './index.html'])).then(() => self.skipWaiting())));
             self.addEventListener('activate', e => e.waitUntil(caches.keys().then(names => Promise.all(names.filter(n => n !== CACHE_NAME).map(n => caches.delete(n)))).then(() => self.clients.claim())));
             self.addEventListener('fetch', e => {
